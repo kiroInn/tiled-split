@@ -4,8 +4,8 @@ const _ = require('lodash');
 const { parseLayerMeta, parseLayer } = require('./parser');
 const { cpSource, mapAg, split, transform } = require('./util');
 
-const SPLIT = { chunkCol: 3, chunkRow: 3 };
-const INPUT = { name: 'd717' }
+const SPLIT = { chunkCol: 1, chunkRow: 1 };
+const INPUT = { name: 'D717' }
 fs.mkdir(`../dist/${INPUT.name}`, { recursive: true }, err => { console.log(err) })
 fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
     if (err) {
@@ -35,5 +35,4 @@ fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
             console.log(`${fileName}  complete`);
         })
     })
-    // console.log(_.get(mapJSON, 'map'));
 });

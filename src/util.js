@@ -3,14 +3,13 @@ function cpSource(layer, layerMeta) {
     const matrix = [].concat.apply([], _.map(layer, item => item.matrix))
     return _.map(layerMeta, meta => {
         const { min, max, from, source } = meta;
-        console.log(meta);
         return `cp /Users/kiro/Src/cocos/mir2.core/src/${from}/{${_.union(matrix).filter(matrixItem => (matrixItem >= min && matrixItem < max)).map(item => item - min).map(item => `${item}.png`).join(',')}} /Users/kiro/Src/cocos/legend/client/assets/resources/tiled/${source}`
     }).join('&& \n');
 }
 
 function mapAg(layer, mapMeta) {
     const { width } = mapMeta;
-    const { matrix } = _.find(layer, item => item.name === 'barrier')
+    const { matrix } = _.find(layer, item => item.name === 'barrier') || {}
     return _.chunk(matrix, width).reverse().map(arr => arr.join(",")).join(",")
 }
 
@@ -19,17 +18,21 @@ function split(layer, mapMeta) {
     if (!(width || height || chunkCol || chunkRow)) {
         throw 'param is err please check'
     }
+    console.log('=====');
     const layerSplits = _.map(layer, layer => {
         const matrix = _.chunk(layer.matrix, width).reverse().map(arr => arr.join(",")).join(",").split(',')
         return _.range(0, chunkCol * chunkRow).map(index => {
             const intervalY = Math.ceil(height / chunkRow);
             const intervalX = Math.ceil(width / chunkCol);
+            console.log(intervalY, intervalX);
             const newMatrix = _.range(0, intervalY).map(indexY => {
                 const start = (index % chunkCol) * intervalX + (Math.floor(index / chunkRow) * intervalY + indexY) * width
                 const max = (Math.floor(index / chunkRow) * intervalY + indexY) * width + width;
                 const end = Math.min(start + intervalX, max);
+                console.log(index, start, max, end, matrix.slice(start, end).join(','));
                 return matrix.slice(start, end).join(',');
             }).filter(item => item.length > 0);
+            console.log(newMatrix);
             return {
                 name: layer.name,
                 matrix: newMatrix.join(",").split(","),
