@@ -1,691 +1,164 @@
 
     <?xml version="1.0" encoding="UTF-8"?>
-    <map version="1.0" tiledversion="1.1.2" orientation="orthogonal" width="100" height="100" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
-    <tileset firstgid="1" name="kiro" columns="0">
-            <tile id="0">
-                <image width="1" height="1" source="tiles/empty.png"/>
-            </tile>
-            <tile id="1">
-                        <image width="1" height="1" source="tiles.tsx/0.png"/>
+    <map version="1.0" tiledversion="1.1.2" orientation="orthogonal" width="32" height="34" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
+    <tileset firstgid="1" name="saga-mir" columns="0">
+                    <tile id="0">
+                        <image width="1" height="1" source="tiles/empty.png"/>
+                    </tile><tile id="1">
+                        <image width="1" height="1" source="tiles/0.png"/>
                     </tile><tile id="2">
-                        <image width="1" height="1" source="tiles.tsx/1950.png"/>
+                        <image width="1" height="1" source="tiles/1950.png"/>
                     </tile><tile id="3">
-                        <image width="1" height="1" source="tiles.tsx/1951.png"/>
+                        <image width="1" height="1" source="tiles/1951.png"/>
                     </tile><tile id="4">
-                        <image width="1" height="1" source="tiles.tsx/1952.png"/>
+                        <image width="1" height="1" source="tiles/1952.png"/>
                     </tile><tile id="5">
-                        <image width="1" height="1" source="tiles.tsx/1953.png"/>
+                        <image width="1" height="1" source="tiles/1953.png"/>
                     </tile><tile id="6">
-                        <image width="1" height="1" source="tiles.tsx/1954.png"/>
+                        <image width="1" height="1" source="tiles/1954.png"/>
                     </tile><tile id="7">
-                        <image width="1" height="1" source="tiles.tsx/2500.png"/>
+                        <image width="1" height="1" source="tiles/2500.png"/>
                     </tile><tile id="8">
-                        <image width="1" height="1" source="tiles.tsx/2501.png"/>
+                        <image width="1" height="1" source="tiles/2501.png"/>
                     </tile><tile id="9">
-                        <image width="1" height="1" source="tiles.tsx/2502.png"/>
+                        <image width="1" height="1" source="tiles/2502.png"/>
                     </tile><tile id="10">
-                        <image width="1" height="1" source="tiles.tsx/2503.png"/>
+                        <image width="1" height="1" source="tiles/2503.png"/>
                     </tile><tile id="11">
-                        <image width="1" height="1" source="tiles.tsx/2504.png"/>
+                        <image width="1" height="1" source="tiles/2504.png"/>
                     </tile><tile id="12">
-                        <image width="1" height="1" source="tiles.tsx/2505.png"/>
+                        <image width="1" height="1" source="tiles/2508.png"/>
                     </tile><tile id="13">
-                        <image width="1" height="1" source="tiles.tsx/2506.png"/>
+                        <image width="1" height="1" source="tiles/2510.png"/>
                     </tile><tile id="14">
-                        <image width="1" height="1" source="tiles.tsx/2507.png"/>
+                        <image width="1" height="1" source="tiles/2513.png"/>
                     </tile><tile id="15">
-                        <image width="1" height="1" source="tiles.tsx/2508.png"/>
+                        <image width="1" height="1" source="objects7/2566.png"/>
                     </tile><tile id="16">
-                        <image width="1" height="1" source="tiles.tsx/2510.png"/>
+                        <image width="1" height="1" source="objects7/2567.png"/>
                     </tile><tile id="17">
-                        <image width="1" height="1" source="tiles.tsx/2511.png"/>
+                        <image width="1" height="1" source="objects7/2568.png"/>
                     </tile><tile id="18">
-                        <image width="1" height="1" source="tiles.tsx/2512.png"/>
+                        <image width="1" height="1" source="objects7/2569.png"/>
                     </tile><tile id="19">
-                        <image width="1" height="1" source="tiles.tsx/2513.png"/>
+                        <image width="1" height="1" source="objects7/4087.png"/>
                     </tile><tile id="20">
-                        <image width="1" height="1" source="tiles.tsx/2515.png"/>
+                        <image width="1" height="1" source="objects7/4088.png"/>
                     </tile><tile id="21">
-                        <image width="1" height="1" source="tiles.tsx/2516.png"/>
+                        <image width="1" height="1" source="objects7/4089.png"/>
                     </tile><tile id="22">
-                        <image width="1" height="1" source="tiles.tsx/2517.png"/>
+                        <image width="1" height="1" source="objects7/4090.png"/>
                     </tile><tile id="23">
-                        <image width="1" height="1" source="tiles.tsx/2518.png"/>
+                        <image width="1" height="1" source="objects7/4091.png"/>
                     </tile><tile id="24">
-                        <image width="1" height="1" source="tiles.tsx/2520.png"/>
+                        <image width="1" height="1" source="objects7/4094.png"/>
                     </tile><tile id="25">
-                        <image width="1" height="1" source="tiles.tsx/2521.png"/>
+                        <image width="1" height="1" source="objects7/4095.png"/>
                     </tile><tile id="26">
-                        <image width="1" height="1" source="tiles.tsx/2522.png"/>
+                        <image width="1" height="1" source="objects7/4096.png"/>
                     </tile><tile id="27">
-                        <image width="1" height="1" source="tiles.tsx/2523.png"/>
-                    </tile><tile id="319">
-                        <image width="1" height="1" source="tiles.tsx/44.png"/>
+                        <image width="1" height="1" source="objects7/4097.png"/>
                     </tile><tile id="28">
-                        <image width="1" height="1" source="objects7.tsx/2560.png"/>
+                        <image width="1" height="1" source="objects7/4098.png"/>
                     </tile><tile id="29">
-                        <image width="1" height="1" source="objects7.tsx/2734.png"/>
+                        <image width="1" height="1" source="objects7/4102.png"/>
                     </tile><tile id="30">
-                        <image width="1" height="1" source="objects7.tsx/2735.png"/>
+                        <image width="1" height="1" source="objects7/4103.png"/>
                     </tile><tile id="31">
-                        <image width="1" height="1" source="objects7.tsx/2736.png"/>
+                        <image width="1" height="1" source="objects7/4104.png"/>
                     </tile><tile id="32">
-                        <image width="1" height="1" source="objects7.tsx/2737.png"/>
+                        <image width="1" height="1" source="objects7/4105.png"/>
                     </tile><tile id="33">
-                        <image width="1" height="1" source="objects7.tsx/2757.png"/>
+                        <image width="1" height="1" source="objects7/4106.png"/>
                     </tile><tile id="34">
-                        <image width="1" height="1" source="objects7.tsx/3517.png"/>
+                        <image width="1" height="1" source="objects7/4107.png"/>
                     </tile><tile id="35">
-                        <image width="1" height="1" source="objects7.tsx/3518.png"/>
+                        <image width="1" height="1" source="objects7/4108.png"/>
                     </tile><tile id="36">
-                        <image width="1" height="1" source="objects7.tsx/3519.png"/>
+                        <image width="1" height="1" source="objects7/4109.png"/>
                     </tile><tile id="37">
-                        <image width="1" height="1" source="objects7.tsx/3520.png"/>
+                        <image width="1" height="1" source="objects7/4110.png"/>
                     </tile><tile id="38">
-                        <image width="1" height="1" source="objects7.tsx/3521.png"/>
+                        <image width="1" height="1" source="objects7/4111.png"/>
                     </tile><tile id="39">
-                        <image width="1" height="1" source="objects7.tsx/3522.png"/>
+                        <image width="1" height="1" source="objects7/4112.png"/>
                     </tile><tile id="40">
-                        <image width="1" height="1" source="objects7.tsx/3523.png"/>
+                        <image width="1" height="1" source="objects7/4113.png"/>
                     </tile><tile id="41">
-                        <image width="1" height="1" source="objects7.tsx/3524.png"/>
+                        <image width="1" height="1" source="objects7/4114.png"/>
                     </tile><tile id="42">
-                        <image width="1" height="1" source="objects7.tsx/3525.png"/>
+                        <image width="1" height="1" source="objects7/4116.png"/>
                     </tile><tile id="43">
-                        <image width="1" height="1" source="objects7.tsx/3526.png"/>
+                        <image width="1" height="1" source="objects7/4119.png"/>
                     </tile><tile id="44">
-                        <image width="1" height="1" source="objects7.tsx/3527.png"/>
+                        <image width="1" height="1" source="objects7/4120.png"/>
                     </tile><tile id="45">
-                        <image width="1" height="1" source="objects7.tsx/3528.png"/>
+                        <image width="1" height="1" source="objects7/4121.png"/>
                     </tile><tile id="46">
-                        <image width="1" height="1" source="objects7.tsx/3529.png"/>
+                        <image width="1" height="1" source="objects7/4122.png"/>
                     </tile><tile id="47">
-                        <image width="1" height="1" source="objects7.tsx/3530.png"/>
+                        <image width="1" height="1" source="objects7/4123.png"/>
                     </tile><tile id="48">
-                        <image width="1" height="1" source="objects7.tsx/3531.png"/>
+                        <image width="1" height="1" source="objects7/4124.png"/>
                     </tile><tile id="49">
-                        <image width="1" height="1" source="objects7.tsx/3532.png"/>
+                        <image width="1" height="1" source="objects7/4126.png"/>
                     </tile><tile id="50">
-                        <image width="1" height="1" source="objects7.tsx/3533.png"/>
+                        <image width="1" height="1" source="objects7/4127.png"/>
                     </tile><tile id="51">
-                        <image width="1" height="1" source="objects7.tsx/3534.png"/>
+                        <image width="1" height="1" source="objects7/4128.png"/>
                     </tile><tile id="52">
-                        <image width="1" height="1" source="objects7.tsx/3535.png"/>
+                        <image width="1" height="1" source="objects7/4129.png"/>
                     </tile><tile id="53">
-                        <image width="1" height="1" source="objects7.tsx/3536.png"/>
+                        <image width="1" height="1" source="objects7/4130.png"/>
                     </tile><tile id="54">
-                        <image width="1" height="1" source="objects7.tsx/3537.png"/>
+                        <image width="1" height="1" source="objects7/4131.png"/>
                     </tile><tile id="55">
-                        <image width="1" height="1" source="objects7.tsx/3538.png"/>
+                        <image width="1" height="1" source="objects7/4132.png"/>
                     </tile><tile id="56">
-                        <image width="1" height="1" source="objects7.tsx/3539.png"/>
-                    </tile><tile id="57">
-                        <image width="1" height="1" source="objects7.tsx/3540.png"/>
-                    </tile><tile id="58">
-                        <image width="1" height="1" source="objects7.tsx/3541.png"/>
-                    </tile><tile id="59">
-                        <image width="1" height="1" source="objects7.tsx/3542.png"/>
-                    </tile><tile id="60">
-                        <image width="1" height="1" source="objects7.tsx/3543.png"/>
-                    </tile><tile id="61">
-                        <image width="1" height="1" source="objects7.tsx/3544.png"/>
-                    </tile><tile id="62">
-                        <image width="1" height="1" source="objects7.tsx/3545.png"/>
-                    </tile><tile id="63">
-                        <image width="1" height="1" source="objects7.tsx/3546.png"/>
-                    </tile><tile id="64">
-                        <image width="1" height="1" source="objects7.tsx/3547.png"/>
-                    </tile><tile id="65">
-                        <image width="1" height="1" source="objects7.tsx/3548.png"/>
-                    </tile><tile id="66">
-                        <image width="1" height="1" source="objects7.tsx/3549.png"/>
-                    </tile><tile id="67">
-                        <image width="1" height="1" source="objects7.tsx/3550.png"/>
-                    </tile><tile id="68">
-                        <image width="1" height="1" source="objects7.tsx/3551.png"/>
-                    </tile><tile id="69">
-                        <image width="1" height="1" source="objects7.tsx/3552.png"/>
-                    </tile><tile id="70">
-                        <image width="1" height="1" source="objects7.tsx/3553.png"/>
-                    </tile><tile id="71">
-                        <image width="1" height="1" source="objects7.tsx/3554.png"/>
-                    </tile><tile id="72">
-                        <image width="1" height="1" source="objects7.tsx/3555.png"/>
-                    </tile><tile id="73">
-                        <image width="1" height="1" source="objects7.tsx/3556.png"/>
-                    </tile><tile id="74">
-                        <image width="1" height="1" source="objects7.tsx/3557.png"/>
-                    </tile><tile id="75">
-                        <image width="1" height="1" source="objects7.tsx/3558.png"/>
-                    </tile><tile id="76">
-                        <image width="1" height="1" source="objects7.tsx/3559.png"/>
-                    </tile><tile id="77">
-                        <image width="1" height="1" source="objects7.tsx/3560.png"/>
-                    </tile><tile id="78">
-                        <image width="1" height="1" source="objects7.tsx/3561.png"/>
-                    </tile><tile id="79">
-                        <image width="1" height="1" source="objects7.tsx/3562.png"/>
-                    </tile><tile id="80">
-                        <image width="1" height="1" source="objects7.tsx/3563.png"/>
-                    </tile><tile id="81">
-                        <image width="1" height="1" source="objects7.tsx/3564.png"/>
-                    </tile><tile id="82">
-                        <image width="1" height="1" source="objects7.tsx/3565.png"/>
-                    </tile><tile id="83">
-                        <image width="1" height="1" source="objects7.tsx/3566.png"/>
-                    </tile><tile id="84">
-                        <image width="1" height="1" source="objects7.tsx/3567.png"/>
-                    </tile><tile id="85">
-                        <image width="1" height="1" source="objects7.tsx/3568.png"/>
-                    </tile><tile id="86">
-                        <image width="1" height="1" source="objects7.tsx/3569.png"/>
-                    </tile><tile id="87">
-                        <image width="1" height="1" source="objects7.tsx/3570.png"/>
-                    </tile><tile id="88">
-                        <image width="1" height="1" source="objects7.tsx/3571.png"/>
-                    </tile><tile id="89">
-                        <image width="1" height="1" source="objects7.tsx/3572.png"/>
-                    </tile><tile id="90">
-                        <image width="1" height="1" source="objects7.tsx/3573.png"/>
-                    </tile><tile id="91">
-                        <image width="1" height="1" source="objects7.tsx/3574.png"/>
-                    </tile><tile id="92">
-                        <image width="1" height="1" source="objects7.tsx/3575.png"/>
-                    </tile><tile id="93">
-                        <image width="1" height="1" source="objects7.tsx/3576.png"/>
-                    </tile><tile id="94">
-                        <image width="1" height="1" source="objects7.tsx/3577.png"/>
-                    </tile><tile id="95">
-                        <image width="1" height="1" source="objects7.tsx/3578.png"/>
-                    </tile><tile id="96">
-                        <image width="1" height="1" source="objects7.tsx/3579.png"/>
-                    </tile><tile id="97">
-                        <image width="1" height="1" source="objects7.tsx/3580.png"/>
-                    </tile><tile id="98">
-                        <image width="1" height="1" source="objects7.tsx/3581.png"/>
-                    </tile><tile id="99">
-                        <image width="1" height="1" source="objects7.tsx/3582.png"/>
-                    </tile><tile id="100">
-                        <image width="1" height="1" source="objects7.tsx/3583.png"/>
-                    </tile><tile id="101">
-                        <image width="1" height="1" source="objects7.tsx/3584.png"/>
-                    </tile><tile id="102">
-                        <image width="1" height="1" source="objects7.tsx/3585.png"/>
-                    </tile><tile id="103">
-                        <image width="1" height="1" source="objects7.tsx/3586.png"/>
-                    </tile><tile id="104">
-                        <image width="1" height="1" source="objects7.tsx/3587.png"/>
-                    </tile><tile id="105">
-                        <image width="1" height="1" source="objects7.tsx/3588.png"/>
-                    </tile><tile id="106">
-                        <image width="1" height="1" source="objects7.tsx/3589.png"/>
-                    </tile><tile id="107">
-                        <image width="1" height="1" source="objects7.tsx/3590.png"/>
-                    </tile><tile id="108">
-                        <image width="1" height="1" source="objects7.tsx/3591.png"/>
-                    </tile><tile id="109">
-                        <image width="1" height="1" source="objects7.tsx/3592.png"/>
-                    </tile><tile id="110">
-                        <image width="1" height="1" source="objects7.tsx/3593.png"/>
-                    </tile><tile id="111">
-                        <image width="1" height="1" source="objects7.tsx/3594.png"/>
-                    </tile><tile id="112">
-                        <image width="1" height="1" source="objects7.tsx/3595.png"/>
-                    </tile><tile id="113">
-                        <image width="1" height="1" source="objects7.tsx/3596.png"/>
-                    </tile><tile id="114">
-                        <image width="1" height="1" source="objects7.tsx/3597.png"/>
-                    </tile><tile id="115">
-                        <image width="1" height="1" source="objects7.tsx/3598.png"/>
-                    </tile><tile id="116">
-                        <image width="1" height="1" source="objects7.tsx/3599.png"/>
-                    </tile><tile id="117">
-                        <image width="1" height="1" source="objects7.tsx/3600.png"/>
-                    </tile><tile id="118">
-                        <image width="1" height="1" source="objects7.tsx/3601.png"/>
-                    </tile><tile id="119">
-                        <image width="1" height="1" source="objects7.tsx/3602.png"/>
-                    </tile><tile id="120">
-                        <image width="1" height="1" source="objects7.tsx/3603.png"/>
-                    </tile><tile id="121">
-                        <image width="1" height="1" source="objects7.tsx/3604.png"/>
-                    </tile><tile id="122">
-                        <image width="1" height="1" source="objects7.tsx/3607.png"/>
-                    </tile><tile id="123">
-                        <image width="1" height="1" source="objects7.tsx/3608.png"/>
-                    </tile><tile id="124">
-                        <image width="1" height="1" source="objects7.tsx/3609.png"/>
-                    </tile><tile id="125">
-                        <image width="1" height="1" source="objects7.tsx/3610.png"/>
-                    </tile><tile id="126">
-                        <image width="1" height="1" source="objects7.tsx/3611.png"/>
-                    </tile><tile id="127">
-                        <image width="1" height="1" source="objects7.tsx/3612.png"/>
-                    </tile><tile id="128">
-                        <image width="1" height="1" source="objects7.tsx/3613.png"/>
-                    </tile><tile id="129">
-                        <image width="1" height="1" source="objects7.tsx/3614.png"/>
-                    </tile><tile id="130">
-                        <image width="1" height="1" source="objects7.tsx/3615.png"/>
-                    </tile><tile id="131">
-                        <image width="1" height="1" source="objects7.tsx/3616.png"/>
-                    </tile><tile id="132">
-                        <image width="1" height="1" source="objects7.tsx/3617.png"/>
-                    </tile><tile id="133">
-                        <image width="1" height="1" source="objects7.tsx/3618.png"/>
-                    </tile><tile id="134">
-                        <image width="1" height="1" source="objects7.tsx/3619.png"/>
-                    </tile><tile id="135">
-                        <image width="1" height="1" source="objects7.tsx/3620.png"/>
-                    </tile><tile id="136">
-                        <image width="1" height="1" source="objects7.tsx/3621.png"/>
-                    </tile><tile id="137">
-                        <image width="1" height="1" source="objects7.tsx/3622.png"/>
-                    </tile><tile id="138">
-                        <image width="1" height="1" source="objects7.tsx/3623.png"/>
-                    </tile><tile id="139">
-                        <image width="1" height="1" source="objects7.tsx/3624.png"/>
-                    </tile><tile id="140">
-                        <image width="1" height="1" source="objects7.tsx/3625.png"/>
-                    </tile><tile id="141">
-                        <image width="1" height="1" source="objects7.tsx/3626.png"/>
-                    </tile><tile id="142">
-                        <image width="1" height="1" source="objects7.tsx/3627.png"/>
-                    </tile><tile id="143">
-                        <image width="1" height="1" source="objects7.tsx/3628.png"/>
-                    </tile><tile id="144">
-                        <image width="1" height="1" source="objects7.tsx/3629.png"/>
-                    </tile><tile id="145">
-                        <image width="1" height="1" source="objects7.tsx/3630.png"/>
-                    </tile><tile id="146">
-                        <image width="1" height="1" source="objects7.tsx/3631.png"/>
-                    </tile><tile id="147">
-                        <image width="1" height="1" source="objects7.tsx/3632.png"/>
-                    </tile><tile id="148">
-                        <image width="1" height="1" source="objects7.tsx/3633.png"/>
-                    </tile><tile id="149">
-                        <image width="1" height="1" source="objects7.tsx/3634.png"/>
-                    </tile><tile id="150">
-                        <image width="1" height="1" source="objects7.tsx/3635.png"/>
-                    </tile><tile id="151">
-                        <image width="1" height="1" source="objects7.tsx/3636.png"/>
-                    </tile><tile id="152">
-                        <image width="1" height="1" source="objects7.tsx/3637.png"/>
-                    </tile><tile id="153">
-                        <image width="1" height="1" source="objects7.tsx/3638.png"/>
-                    </tile><tile id="154">
-                        <image width="1" height="1" source="objects7.tsx/3639.png"/>
-                    </tile><tile id="155">
-                        <image width="1" height="1" source="objects7.tsx/3640.png"/>
-                    </tile><tile id="156">
-                        <image width="1" height="1" source="objects7.tsx/3641.png"/>
-                    </tile><tile id="157">
-                        <image width="1" height="1" source="objects7.tsx/3642.png"/>
-                    </tile><tile id="158">
-                        <image width="1" height="1" source="objects7.tsx/3643.png"/>
-                    </tile><tile id="159">
-                        <image width="1" height="1" source="objects7.tsx/3644.png"/>
-                    </tile><tile id="160">
-                        <image width="1" height="1" source="objects7.tsx/3645.png"/>
-                    </tile><tile id="161">
-                        <image width="1" height="1" source="objects7.tsx/3646.png"/>
-                    </tile><tile id="162">
-                        <image width="1" height="1" source="objects7.tsx/3647.png"/>
-                    </tile><tile id="163">
-                        <image width="1" height="1" source="objects7.tsx/3648.png"/>
-                    </tile><tile id="164">
-                        <image width="1" height="1" source="objects7.tsx/3649.png"/>
-                    </tile><tile id="165">
-                        <image width="1" height="1" source="objects7.tsx/3650.png"/>
-                    </tile><tile id="166">
-                        <image width="1" height="1" source="objects7.tsx/3651.png"/>
-                    </tile><tile id="167">
-                        <image width="1" height="1" source="objects7.tsx/3652.png"/>
-                    </tile><tile id="168">
-                        <image width="1" height="1" source="objects7.tsx/3653.png"/>
-                    </tile><tile id="169">
-                        <image width="1" height="1" source="objects7.tsx/3654.png"/>
-                    </tile><tile id="170">
-                        <image width="1" height="1" source="objects7.tsx/3655.png"/>
-                    </tile><tile id="171">
-                        <image width="1" height="1" source="objects7.tsx/3656.png"/>
-                    </tile><tile id="172">
-                        <image width="1" height="1" source="objects7.tsx/3657.png"/>
-                    </tile><tile id="173">
-                        <image width="1" height="1" source="objects7.tsx/3658.png"/>
-                    </tile><tile id="174">
-                        <image width="1" height="1" source="objects7.tsx/3663.png"/>
-                    </tile><tile id="175">
-                        <image width="1" height="1" source="objects7.tsx/3664.png"/>
-                    </tile><tile id="176">
-                        <image width="1" height="1" source="objects7.tsx/3665.png"/>
-                    </tile><tile id="177">
-                        <image width="1" height="1" source="objects7.tsx/3666.png"/>
-                    </tile><tile id="178">
-                        <image width="1" height="1" source="objects7.tsx/3667.png"/>
-                    </tile><tile id="179">
-                        <image width="1" height="1" source="objects7.tsx/3668.png"/>
-                    </tile><tile id="180">
-                        <image width="1" height="1" source="objects7.tsx/3669.png"/>
-                    </tile><tile id="181">
-                        <image width="1" height="1" source="objects7.tsx/3670.png"/>
-                    </tile><tile id="182">
-                        <image width="1" height="1" source="objects7.tsx/3671.png"/>
-                    </tile><tile id="183">
-                        <image width="1" height="1" source="objects7.tsx/3672.png"/>
-                    </tile><tile id="184">
-                        <image width="1" height="1" source="objects7.tsx/3673.png"/>
-                    </tile><tile id="185">
-                        <image width="1" height="1" source="objects7.tsx/3674.png"/>
-                    </tile><tile id="186">
-                        <image width="1" height="1" source="objects7.tsx/3675.png"/>
-                    </tile><tile id="187">
-                        <image width="1" height="1" source="objects7.tsx/3676.png"/>
-                    </tile><tile id="188">
-                        <image width="1" height="1" source="objects7.tsx/3677.png"/>
-                    </tile><tile id="189">
-                        <image width="1" height="1" source="objects7.tsx/3678.png"/>
-                    </tile><tile id="190">
-                        <image width="1" height="1" source="objects7.tsx/3679.png"/>
-                    </tile><tile id="191">
-                        <image width="1" height="1" source="objects7.tsx/3680.png"/>
-                    </tile><tile id="192">
-                        <image width="1" height="1" source="objects7.tsx/3681.png"/>
-                    </tile><tile id="193">
-                        <image width="1" height="1" source="objects7.tsx/3682.png"/>
-                    </tile><tile id="194">
-                        <image width="1" height="1" source="objects7.tsx/3683.png"/>
-                    </tile><tile id="195">
-                        <image width="1" height="1" source="objects7.tsx/3684.png"/>
-                    </tile><tile id="196">
-                        <image width="1" height="1" source="objects7.tsx/3685.png"/>
-                    </tile><tile id="197">
-                        <image width="1" height="1" source="objects7.tsx/3686.png"/>
-                    </tile><tile id="198">
-                        <image width="1" height="1" source="objects7.tsx/3687.png"/>
-                    </tile><tile id="199">
-                        <image width="1" height="1" source="objects7.tsx/3688.png"/>
-                    </tile><tile id="200">
-                        <image width="1" height="1" source="objects7.tsx/3689.png"/>
-                    </tile><tile id="201">
-                        <image width="1" height="1" source="objects7.tsx/3690.png"/>
-                    </tile><tile id="202">
-                        <image width="1" height="1" source="objects7.tsx/3691.png"/>
-                    </tile><tile id="203">
-                        <image width="1" height="1" source="objects7.tsx/3692.png"/>
-                    </tile><tile id="204">
-                        <image width="1" height="1" source="objects7.tsx/3693.png"/>
-                    </tile><tile id="205">
-                        <image width="1" height="1" source="objects7.tsx/3694.png"/>
-                    </tile><tile id="206">
-                        <image width="1" height="1" source="objects7.tsx/3695.png"/>
-                    </tile><tile id="207">
-                        <image width="1" height="1" source="objects7.tsx/3696.png"/>
-                    </tile><tile id="208">
-                        <image width="1" height="1" source="objects7.tsx/3697.png"/>
-                    </tile><tile id="209">
-                        <image width="1" height="1" source="objects7.tsx/3698.png"/>
-                    </tile><tile id="210">
-                        <image width="1" height="1" source="objects7.tsx/3699.png"/>
-                    </tile><tile id="211">
-                        <image width="1" height="1" source="objects7.tsx/3700.png"/>
-                    </tile><tile id="212">
-                        <image width="1" height="1" source="objects7.tsx/3701.png"/>
-                    </tile><tile id="213">
-                        <image width="1" height="1" source="objects7.tsx/3702.png"/>
-                    </tile><tile id="214">
-                        <image width="1" height="1" source="objects7.tsx/3703.png"/>
-                    </tile><tile id="215">
-                        <image width="1" height="1" source="objects7.tsx/3704.png"/>
-                    </tile><tile id="216">
-                        <image width="1" height="1" source="objects7.tsx/3705.png"/>
-                    </tile><tile id="217">
-                        <image width="1" height="1" source="objects7.tsx/3706.png"/>
-                    </tile><tile id="218">
-                        <image width="1" height="1" source="objects7.tsx/3707.png"/>
-                    </tile><tile id="219">
-                        <image width="1" height="1" source="objects7.tsx/3708.png"/>
-                    </tile><tile id="220">
-                        <image width="1" height="1" source="objects7.tsx/3709.png"/>
-                    </tile><tile id="221">
-                        <image width="1" height="1" source="objects7.tsx/3710.png"/>
-                    </tile><tile id="222">
-                        <image width="1" height="1" source="objects7.tsx/3711.png"/>
-                    </tile><tile id="223">
-                        <image width="1" height="1" source="objects7.tsx/3712.png"/>
-                    </tile><tile id="224">
-                        <image width="1" height="1" source="objects7.tsx/3713.png"/>
-                    </tile><tile id="225">
-                        <image width="1" height="1" source="objects7.tsx/3714.png"/>
-                    </tile><tile id="226">
-                        <image width="1" height="1" source="objects7.tsx/3715.png"/>
-                    </tile><tile id="227">
-                        <image width="1" height="1" source="objects7.tsx/3716.png"/>
-                    </tile><tile id="228">
-                        <image width="1" height="1" source="objects7.tsx/3717.png"/>
-                    </tile><tile id="229">
-                        <image width="1" height="1" source="objects7.tsx/3718.png"/>
-                    </tile><tile id="230">
-                        <image width="1" height="1" source="objects7.tsx/3719.png"/>
-                    </tile><tile id="231">
-                        <image width="1" height="1" source="objects7.tsx/3720.png"/>
-                    </tile><tile id="232">
-                        <image width="1" height="1" source="objects7.tsx/3721.png"/>
-                    </tile><tile id="233">
-                        <image width="1" height="1" source="objects7.tsx/3722.png"/>
-                    </tile><tile id="234">
-                        <image width="1" height="1" source="objects7.tsx/3723.png"/>
-                    </tile><tile id="235">
-                        <image width="1" height="1" source="objects7.tsx/3724.png"/>
-                    </tile><tile id="236">
-                        <image width="1" height="1" source="objects7.tsx/3725.png"/>
-                    </tile><tile id="237">
-                        <image width="1" height="1" source="objects7.tsx/3726.png"/>
-                    </tile><tile id="238">
-                        <image width="1" height="1" source="objects7.tsx/3727.png"/>
-                    </tile><tile id="239">
-                        <image width="1" height="1" source="objects7.tsx/3728.png"/>
-                    </tile><tile id="240">
-                        <image width="1" height="1" source="objects7.tsx/3729.png"/>
-                    </tile><tile id="241">
-                        <image width="1" height="1" source="objects7.tsx/3730.png"/>
-                    </tile><tile id="242">
-                        <image width="1" height="1" source="objects7.tsx/3731.png"/>
-                    </tile><tile id="243">
-                        <image width="1" height="1" source="objects7.tsx/3732.png"/>
-                    </tile><tile id="244">
-                        <image width="1" height="1" source="objects7.tsx/3733.png"/>
-                    </tile><tile id="245">
-                        <image width="1" height="1" source="objects7.tsx/3734.png"/>
-                    </tile><tile id="246">
-                        <image width="1" height="1" source="objects7.tsx/3735.png"/>
-                    </tile><tile id="247">
-                        <image width="1" height="1" source="objects7.tsx/3736.png"/>
-                    </tile><tile id="248">
-                        <image width="1" height="1" source="objects7.tsx/3737.png"/>
-                    </tile><tile id="249">
-                        <image width="1" height="1" source="objects7.tsx/3738.png"/>
-                    </tile><tile id="250">
-                        <image width="1" height="1" source="objects7.tsx/3739.png"/>
-                    </tile><tile id="251">
-                        <image width="1" height="1" source="objects7.tsx/3740.png"/>
-                    </tile><tile id="252">
-                        <image width="1" height="1" source="objects7.tsx/3741.png"/>
-                    </tile><tile id="253">
-                        <image width="1" height="1" source="objects7.tsx/3742.png"/>
-                    </tile><tile id="254">
-                        <image width="1" height="1" source="objects7.tsx/3745.png"/>
-                    </tile><tile id="255">
-                        <image width="1" height="1" source="objects7.tsx/3746.png"/>
-                    </tile><tile id="256">
-                        <image width="1" height="1" source="objects7.tsx/3747.png"/>
-                    </tile><tile id="257">
-                        <image width="1" height="1" source="objects7.tsx/3748.png"/>
-                    </tile><tile id="258">
-                        <image width="1" height="1" source="objects7.tsx/3749.png"/>
-                    </tile><tile id="259">
-                        <image width="1" height="1" source="objects7.tsx/3750.png"/>
-                    </tile><tile id="260">
-                        <image width="1" height="1" source="objects7.tsx/3751.png"/>
-                    </tile><tile id="261">
-                        <image width="1" height="1" source="objects7.tsx/3752.png"/>
-                    </tile><tile id="262">
-                        <image width="1" height="1" source="objects7.tsx/3753.png"/>
-                    </tile><tile id="263">
-                        <image width="1" height="1" source="objects7.tsx/3754.png"/>
-                    </tile><tile id="264">
-                        <image width="1" height="1" source="objects7.tsx/3755.png"/>
-                    </tile><tile id="265">
-                        <image width="1" height="1" source="objects7.tsx/3756.png"/>
-                    </tile><tile id="266">
-                        <image width="1" height="1" source="objects7.tsx/3757.png"/>
-                    </tile><tile id="267">
-                        <image width="1" height="1" source="objects7.tsx/3758.png"/>
-                    </tile><tile id="268">
-                        <image width="1" height="1" source="objects7.tsx/3759.png"/>
-                    </tile><tile id="269">
-                        <image width="1" height="1" source="objects7.tsx/3760.png"/>
-                    </tile><tile id="270">
-                        <image width="1" height="1" source="objects7.tsx/3761.png"/>
-                    </tile><tile id="271">
-                        <image width="1" height="1" source="objects7.tsx/3762.png"/>
-                    </tile><tile id="272">
-                        <image width="1" height="1" source="objects7.tsx/3763.png"/>
-                    </tile><tile id="273">
-                        <image width="1" height="1" source="objects7.tsx/3764.png"/>
-                    </tile><tile id="274">
-                        <image width="1" height="1" source="objects7.tsx/3765.png"/>
-                    </tile><tile id="275">
-                        <image width="1" height="1" source="objects7.tsx/3766.png"/>
-                    </tile><tile id="276">
-                        <image width="1" height="1" source="objects7.tsx/3767.png"/>
-                    </tile><tile id="277">
-                        <image width="1" height="1" source="objects7.tsx/3768.png"/>
-                    </tile><tile id="278">
-                        <image width="1" height="1" source="objects7.tsx/3769.png"/>
-                    </tile><tile id="279">
-                        <image width="1" height="1" source="objects7.tsx/3770.png"/>
-                    </tile><tile id="280">
-                        <image width="1" height="1" source="objects7.tsx/4002.png"/>
-                    </tile><tile id="281">
-                        <image width="1" height="1" source="objects7.tsx/4003.png"/>
-                    </tile><tile id="282">
-                        <image width="1" height="1" source="objects7.tsx/4004.png"/>
-                    </tile><tile id="283">
-                        <image width="1" height="1" source="objects7.tsx/4005.png"/>
-                    </tile><tile id="284">
-                        <image width="1" height="1" source="objects7.tsx/4006.png"/>
-                    </tile><tile id="285">
-                        <image width="1" height="1" source="objects7.tsx/4007.png"/>
-                    </tile><tile id="286">
-                        <image width="1" height="1" source="objects7.tsx/4008.png"/>
-                    </tile><tile id="287">
-                        <image width="1" height="1" source="objects7.tsx/4009.png"/>
-                    </tile><tile id="288">
-                        <image width="1" height="1" source="objects7.tsx/4010.png"/>
-                    </tile><tile id="289">
-                        <image width="1" height="1" source="objects7.tsx/4011.png"/>
-                    </tile><tile id="290">
-                        <image width="1" height="1" source="objects7.tsx/4012.png"/>
-                    </tile><tile id="291">
-                        <image width="1" height="1" source="objects7.tsx/4013.png"/>
-                    </tile><tile id="292">
-                        <image width="1" height="1" source="objects7.tsx/4014.png"/>
-                    </tile><tile id="293">
-                        <image width="1" height="1" source="objects7.tsx/4015.png"/>
-                    </tile><tile id="294">
-                        <image width="1" height="1" source="objects7.tsx/4016.png"/>
-                    </tile><tile id="295">
-                        <image width="1" height="1" source="objects7.tsx/4017.png"/>
-                    </tile><tile id="296">
-                        <image width="1" height="1" source="objects7.tsx/4018.png"/>
-                    </tile><tile id="297">
-                        <image width="1" height="1" source="objects7.tsx/4019.png"/>
-                    </tile><tile id="298">
-                        <image width="1" height="1" source="objects7.tsx/4020.png"/>
-                    </tile><tile id="299">
-                        <image width="1" height="1" source="objects7.tsx/4021.png"/>
-                    </tile><tile id="300">
-                        <image width="1" height="1" source="objects7.tsx/4022.png"/>
-                    </tile><tile id="301">
-                        <image width="1" height="1" source="objects7.tsx/4023.png"/>
-                    </tile><tile id="302">
-                        <image width="1" height="1" source="objects7.tsx/4024.png"/>
-                    </tile><tile id="303">
-                        <image width="1" height="1" source="objects7.tsx/4025.png"/>
-                    </tile><tile id="304">
-                        <image width="1" height="1" source="objects7.tsx/4026.png"/>
-                    </tile><tile id="305">
-                        <image width="1" height="1" source="objects7.tsx/4027.png"/>
-                    </tile><tile id="306">
-                        <image width="1" height="1" source="objects7.tsx/4028.png"/>
-                    </tile><tile id="307">
-                        <image width="1" height="1" source="objects7.tsx/4029.png"/>
-                    </tile><tile id="308">
-                        <image width="1" height="1" source="objects7.tsx/4030.png"/>
-                    </tile><tile id="309">
-                        <image width="1" height="1" source="objects7.tsx/4033.png"/>
-                    </tile><tile id="310">
-                        <image width="1" height="1" source="objects7.tsx/4037.png"/>
-                    </tile><tile id="311">
-                        <image width="1" height="1" source="objects7.tsx/4053.png"/>
-                    </tile><tile id="312">
-                        <image width="1" height="1" source="objects7.tsx/4057.png"/>
-                    </tile><tile id="313">
-                        <image width="1" height="1" source="objects7.tsx/4058.png"/>
-                    </tile><tile id="314">
-                        <image width="1" height="1" source="objects7.tsx/4059.png"/>
-                    </tile><tile id="315">
-                        <image width="1" height="1" source="objects7.tsx/4060.png"/>
-                    </tile><tile id="316">
-                        <image width="1" height="1" source="objects7.tsx/4061.png"/>
-                    </tile><tile id="317">
-                        <image width="1" height="1" source="objects7.tsx/4120.png"/>
-                    </tile><tile id="318">
-                        <image width="1" height="1" source="objects7.tsx/4121.png"/>
+                        <image width="1" height="1" source="objects7/4133.png"/>
                     </tile>
     </tileset> 
-    <layer name="base" width="100" height="100">
+    <layer name="base" width="32" height="34">
         <data encoding="csv">
-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,3,1,5,1,3,1,6,1,6,1,6,1,6,1,5,1,4,1,6,1,5,1,7,1,6,1,7,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6,1,6,1,
-7,1,6,1,3,1,4,1,6,1,7,1,5,1,5,1,7,1,5,1,6,1,3,1,4,1,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,7,1,6,1,3,1,5,1,5,1,3,1,3,1,5,1,6,1,3,1,7,1,7,1,6,1,7,1,4,1,1,1,1,1,1,1,1,1,
-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6,1,5,1,7,1,3,1,3,1,4,1,7,1,3,1,4,1,7,1,4,1,3,1,6,1,5,1,6,1,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,7,1,4,1,4,1,6,1,6,1,
-5,1,4,1,6,1,7,1,6,1,7,1,3,1,6,1,4,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,13,1,21,1,22,1,21,1,22,1,14,1,7,1,4,1,7,1,4,1,3,1,3,1,7,1,5,1,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,25,1,12,1,8,1,9,1,11,1,18,1,14,1,7,1,4,1,4,1,7,1,320,1,4,1,3,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,320,1,27,1,10,1,12,1,9,1,12,1,8,1,18,1,21,1,22,1,
-14,1,4,1,6,1,3,1,3,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,320,1,15,1,19,1,8,1,12,1,8,1,11,1,9,1,11,1,8,1,18,1,14,1,6,1,5,1,7,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-1,1,1,1,1,1,1,1,21,1,22,1,17,1,11,1,10,1,8,1,11,1,8,1,10,1,10,1,8,1,18,1,14,1,6,1,7,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,12,1,10,1,10,1,10,1,12,1,11,1,11,1,11,1,8,1,8,1,12,1,12,1,26,1,5,1,
-5,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,12,1,12,1,12,1,10,1,8,1,11,1,9,1,11,1,11,1,10,1,10,1,10,1,28,1,6,1,5,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-9,1,20,1,23,1,24,1,19,1,11,1,11,1,8,1,8,1,10,1,8,1,9,1,18,1,14,1,5,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,12,1,18,1,14,1,13,1,17,1,10,1,11,1,10,1,9,1,9,1,11,1,12,1,10,1,18,1,14,1,7,1,1,1,1,1,
-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,1,10,1,26,1,25,1,8,1,11,1,10,1,10,1,8,1,10,1,19,1,12,1,10,1,11,1,26,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,1,8,1,28,1,27,1,
-12,1,8,1,10,1,11,1,9,1,10,1,17,1,9,1,10,1,8,1,28,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,1,20,1,16,1,15,1,19,1,9,1,23,1,24,1,19,1,12,1,8,1,11,1,9,1,20,1,16,1,3,1
+5,1,5,1,5,1,4,1,5,1,6,1,3,1,5,1,5,1,7,1,4,1,3,1,5,1,7,1,5,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,6,1,3,1,4,1,5,1,3,1,5,1,6,1,4,1,5,1,6,1,6,1,7,1,4,1,7,1,3,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,6,1,7,1,5,1,5,1,7,1,5,1,3,1,3,1,7,1,5,1,4,1,5,1,5,1,4,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6,1,6,1,5,1,3,1,
+5,1,7,1,5,1,7,1,3,1,6,1,5,1,5,1,6,1,5,1,7,1,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,6,1,6,1,7,1,3,1,7,1,4,1,6,1,3,1,4,1,4,1,7,1,7,1,7,1,6,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,7,1,6,1,7,1,7,1,3,1,6,1,7,1,6,1,5,1,4,1,5,1,3,1,6,1,3,1,7,1,7,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,5,1,3,1,5,1,5,1,6,1,5,1,5,1,7,1,
+5,1,7,1,3,1,6,1,3,1,5,1,3,1,7,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,13,1,7,1,5,1,6,1,4,1,6,1,3,1,3,1,5,1,4,1,4,1,5,1,7,1,6,1,6,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,15,1,13,1,4,1,3,1,4,1,5,1,6,1,3,1,5,1,4,1,6,1,6,1,6,1,5,1,6,1,4,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,12,1,15,1,13,1,5,1,7,1,6,1,6,1,6,1,7,1,4,1,7,1,5,1,
+6,1,7,1,6,1,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,1,9,1,15,1,13,1,6,1,7,1,3,1,7,1,3,1,4,1,5,1,4,1,4,1,3,1,3,1,7,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,9,1,9,1,9,1,15,1,13,1,3,1,6,1,3,1,4,1,4,1,4,1,6,1,3,1,3,1,3,1,7,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,1,8,1,10,1,10,1,15,1,13,1,3,1,5,1,7,1,5,1,6,1,3,1,3,1,3,1,3,1,7,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,10,1,10,1,11,1,11,1,8,1,15,1,13,1,7,1,6,1,5,1,7,1,3,1,7,1,3,1,5,1,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,9,1,
+9,1,10,1,8,1,10,1,15,1,13,1,3,1,6,1,6,1,5,1,7,1,6,1,7,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,10,1,11,1,8,1,10,1,8,1,8,1,15,1,13,1,6,1,5,1,5,1,3,1,4,1,3,1,3,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,14,1,9,1,11,1,12,1,8,1,9,1,12,1,11,1,15,1,13,1,3,1,4,1,7,1,5,1,5,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 </data>
-                </layer> <layer name="barrier" width="100" height="100">
+                </layer> <layer name="barrier" width="32" height="34">
         <data encoding="csv">
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
 2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,2,2,2,2,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2,1,1,1,1,1,1,2,2,2,2,2,1,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2,2,1,1,1,1,1,1,2,2,1,1,1,1,1,1,
-1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,1,1,2,
-2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,1,1,1,2,2,2,2,2,2,2,1,2,2,2,2,2,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,1,2,2,2,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,
-2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,
-1,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,2,1,1,2,2,2,2,2,2,2,1,1,1,1,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,1,1,1,1,1,2,2,2,2,2,1,1,1,1,
-1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,1,1,1,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,1,1,1,1,1,1,1,1,
-1,1,1,1,1,1,1,1,1,1,1,2,2,2,1,1,1,1,1,1,1,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,1,1,1,1,1,1,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,1,1,1,1,1,2,2,2,2,2
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+2,2,2,2,2,2,2,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,
+1,2,2,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,2,2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
 </data>
-                </layer> <layer name="obj" width="100" height="100">
+                </layer> <layer name="obj" width="32" height="34">
         <data encoding="csv">
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,255,1,1,1,1,1,1,1,242,1,1,1,1,1,1,1,1,1,1,1,1,1,1,315,1,1,1,1,1,1,1,1,279,274,1,263,1,
-175,250,246,241,237,232,1,1,1,1,1,1,1,1,1,1,1,1,314,1,1,1,1,1,1,1,1,278,273,268,262,258,253,249,245,240,236,231,227,1,1,1,1,1,1,1,1,1,1,1,313,1,1,1,1,1,1,1,1,277,272,267,261,257,252,248,244,239,235,230,226,222,1,1,1,1,1,1,1,1,1,316,1,1,1,1,1,1,1,1,1,276,271,266,260,256,251,247,243,238,
-234,229,225,221,217,208,1,1,1,1,1,1,317,1,1,1,1,1,1,1,1,1,1,275,270,265,259,280,1,1,1,1,233,228,224,220,216,207,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,269,264,148,135,35,109,96,83,1,1,223,219,215,206,1,1,1,1,1,1,1,312,1,1,1,287,283,1,1,1,1,1,1,159,147,134,121,108,95,82,70,59,1,218,
-214,205,1,1,1,1,1,1,1,1,1,1,1,286,282,1,1,1,1,1,168,158,146,133,120,107,94,81,69,58,48,1,213,204,1,1,1,1,1,1,1,1,301,296,291,285,281,1,1,1,1,123,167,157,145,132,119,106,93,80,68,57,47,1,1,1,1,1,1,1,1,1,311,1,300,295,290,284,310,1,1,1,1,173,166,156,144,131,118,105,92,79,67,56,46,39,1,1,1,1,
-1,1,1,1,309,305,299,294,289,1,1,1,1,1,1,172,165,155,143,130,117,104,91,78,66,55,45,38,1,203,1,1,1,1,1,1,308,304,298,293,288,1,1,1,1,1,1,171,164,154,142,129,116,103,90,77,65,54,44,37,212,202,198,1,1,1,1,1,307,303,297,292,1,1,1,1,1,1,1,170,163,153,141,128,115,102,89,76,64,53,43,36,211,201,197,1,1,1,1,1,
-306,302,1,1,1,1,1,1,1,1,1,169,162,152,140,127,114,101,88,75,63,52,42,122,210,200,196,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,161,151,139,126,113,100,87,74,62,51,41,1,209,199,195,192,187,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,160,150,138,125,112,99,86,73,61,50,40,1,1,1,194,191,186,182,1,1,1,1,1,1,
-1,1,1,1,1,1,1,1,1,149,137,124,111,98,85,72,60,49,1,1,1,1,193,190,185,181,178,33,1,1,1,1,1,1,1,1,1,1,1,1,1,1,136,174,110,97,84,71,1,1,1,1,1,1,1,189,184,180,177,32,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,188,183,179,176,31,1,1,1,1,1,1,1,1,
-1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,254,30,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,34,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,319,318,1,1,1,1,1,1,1,1,1,29
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,20,23,22,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,21,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,24,25,28,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,31,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,36,32,1,30,1,1,1,27,26,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,37,33,1,1,43,1,1,1,1,29,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,38,34,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,39,35,1,1,1,1,1,1,1,1,18,17,16,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,40,1,1,57,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,46,45,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,19,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,20,23,22,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,21,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,24,25,28,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,54,50,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,55,51,47,1,1,1,31,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,56,52,48,41,36,32,1,30,1,1,1,27,26,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,44,53,49,42,37,33,1,1,43,1,1,1,1,29,1,1,1,1,1,1,1,1
 </data>
                 </layer>
     </map>

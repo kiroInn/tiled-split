@@ -2,9 +2,10 @@ const _ = require('lodash');
 function cpSource(layer, layerMeta) {
     const matrix = [].concat.apply([], _.map(layer, item => item.matrix))
     return _.map(layerMeta, meta => {
-        const { min, max, from, to } = meta;
-        return `cp /Users/kiro/Src/cocos/mir2.core/src/${from}/{${_.union(matrix).filter(matrixItem => (matrixItem >= min && matrixItem < max)).map(item => item - min).map(item => `${item}.png`).join(',')}} /Users/kiro/Src/cocos/legend/client/assets/resources/tiled/${to}`
-    }).join(' && ');
+        const { min, max, from, source } = meta;
+        console.log(meta);
+        return `cp /Users/kiro/Src/cocos/mir2.core/src/${from}/{${_.union(matrix).filter(matrixItem => (matrixItem >= min && matrixItem < max)).map(item => item - min).map(item => `${item}.png`).join(',')}} /Users/kiro/Src/cocos/legend/client/assets/resources/tiled/${source}`
+    }).join('&& \n');
 }
 
 function mapAg(layer, mapMeta) {
@@ -19,7 +20,7 @@ function split(layer, mapMeta) {
         throw 'param is err please check'
     }
     const layerSplits = _.map(layer, layer => {
-        const matrix = _.chunk(layer.matrix, width).map(arr => arr.join(",")).join(",").split(',')
+        const matrix = _.chunk(layer.matrix, width).reverse().map(arr => arr.join(",")).join(",").split(',')
         return _.range(0, chunkCol * chunkRow).map(index => {
             const intervalY = Math.ceil(height / chunkRow);
             const intervalX = Math.ceil(width / chunkCol);
@@ -27,13 +28,13 @@ function split(layer, mapMeta) {
                 const start = (index % chunkCol) * intervalX + (Math.floor(index / chunkRow) * intervalY + indexY) * width
                 const max = (Math.floor(index / chunkRow) * intervalY + indexY) * width + width;
                 const end = Math.min(start + intervalX, max);
-                console.log(start + intervalX, max)
                 return matrix.slice(start, end).join(',');
-            })
-            console.log(layer.name, newMatrix.length)
+            }).filter(item => item.length > 0);
             return {
                 name: layer.name,
-                matrix: newMatrix.join(",").split(",")
+                matrix: newMatrix.join(",").split(","),
+                width: _.get(newMatrix, '[0]').split(',').length,
+                height: newMatrix.length,
             }
         })
     })
@@ -46,14 +47,13 @@ function split(layer, mapMeta) {
 
 function transform(layer, layerMeta, mapMeta) {
     const matrix = [].concat.apply([], _.map(layer, item => item.matrix))
-    const { width, height } = mapMeta;
+    const { width, height } = _.get(layer, [0]);
     const allMap = _.sortBy(_.union(matrix))
 
-    const tsx = `<tileset firstgid="1" name="kiro" columns="0">
-            <tile id="0">
-                <image width="1" height="1" source="tiles/empty.png"/>
-            </tile>
-            ${_.map(layerMeta, meta => {
+    const tsx = `<tileset firstgid="1" name="saga-mir" columns="0">
+                    <tile id="0">
+                        <image width="1" height="1" source="tiles/empty.png"/>
+                    </tile>${_.map(layerMeta, meta => {
         const { min, max, source, width = 1, height = 1 } = meta;
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).map(item => {
             const newValue = item - min;

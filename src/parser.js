@@ -6,9 +6,10 @@ function parseLayerMeta(mapInfo) {
     const layerMeta = _.map(tileset, ({ _attributes }, index) => {
         const { firstgid, source } = _attributes;
         const max = index === gids.length - 1 ? 999999 : gids[index + 1]
-        const newSource = source.replace('.txs', '').toLowerCase();
-        return { min: parseInt(firstgid, 10), max: max, source: newSource, form: source, to: newSource }
+        const newSource = source.replace('.tsx', '').toLowerCase();
+        return { min: parseInt(firstgid, 10), max: max, source: newSource, from: source }
     })
+    console.log(layerMeta)
     return layerMeta;
 }
 
