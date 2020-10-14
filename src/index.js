@@ -5,8 +5,10 @@ const { parseLayerMeta, parseLayer } = require('./parser');
 const { cpSource, mapAg, split, transform } = require('./util');
 
 const SPLIT = { chunkCol: 1, chunkRow: 1 };
-const INPUT = { name: 'D717' }
-fs.mkdir(`../dist/${INPUT.name}`, { recursive: true }, err => { console.log(err) })
+const INPUT = { name: '888' }
+
+fs.rmdirSync(`../dist/${INPUT.name}`, { recursive: true })
+fs.mkdirSync(`../dist/${INPUT.name}`, { recursive: true })
 fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
     if (err) {
         return console.log(err);
@@ -19,7 +21,6 @@ fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
         height: parseInt(_.get(mapInfo, 'map._attributes.height'), 10),
         chunkCol: SPLIT.chunkCol, chunkRow: SPLIT.chunkRow
     }
-
     fs.writeFile(`../dist/${INPUT.name}/${INPUT.name}-cp.sh`, cpSource(layer, layerMeta), function (err) {
         if (err) return console.log(err);
         console.log('cpSource complete');

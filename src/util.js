@@ -18,21 +18,17 @@ function split(layer, mapMeta) {
     if (!(width || height || chunkCol || chunkRow)) {
         throw 'param is err please check'
     }
-    console.log('=====');
     const layerSplits = _.map(layer, layer => {
         const matrix = _.chunk(layer.matrix, width).reverse().map(arr => arr.join(",")).join(",").split(',')
         return _.range(0, chunkCol * chunkRow).map(index => {
             const intervalY = Math.ceil(height / chunkRow);
             const intervalX = Math.ceil(width / chunkCol);
-            console.log(intervalY, intervalX);
             const newMatrix = _.range(0, intervalY).map(indexY => {
                 const start = (index % chunkCol) * intervalX + (Math.floor(index / chunkRow) * intervalY + indexY) * width
                 const max = (Math.floor(index / chunkRow) * intervalY + indexY) * width + width;
                 const end = Math.min(start + intervalX, max);
-                console.log(index, start, max, end, matrix.slice(start, end).join(','));
                 return matrix.slice(start, end).join(',');
             }).filter(item => item.length > 0);
-            console.log(newMatrix);
             return {
                 name: layer.name,
                 matrix: newMatrix.join(",").split(","),
@@ -52,7 +48,6 @@ function transform(layer, layerMeta, mapMeta) {
     const matrix = [].concat.apply([], _.map(layer, item => item.matrix))
     const { width, height } = _.get(layer, [0]);
     const allMap = _.sortBy(_.union(matrix))
-
     const tsx = `<tileset firstgid="1" name="saga-mir" columns="0">
                     <tile id="0">
                         <image width="1" height="1" source="tiles/empty.png"/>
@@ -69,12 +64,14 @@ function transform(layer, layerMeta, mapMeta) {
 
     const matrixStr = _.map(layer, item => {
         const { name, matrix } = item;
+        const isBarrier = name === 'barrier';
         const newM = _.map(matrix, matrixItem => {
+            if (isBarrier) return matrixItem;
             const newValue = allMap.indexOf(matrixItem);
-            return matrixItem === 0 ? 0 : newValue + 1;
+            return matrixItem == 0 ? 0 : newValue + 1;
         });
         return `<layer name="${name}" width="${width}" height="${height}">
-        <data encoding="csv">\n${_.chunk(newM, 100).map(newItem => newItem.join(",")).join(',\n')}\n</data>
+        <data encoding="csv">\n${_.chunk(newM, width).map(newItem => newItem.join(",")).join(',\n')}\n</data>
                 </layer>`
     }).join(' ');
     return `
