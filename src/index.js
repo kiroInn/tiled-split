@@ -4,7 +4,7 @@ const _ = require('lodash');
 const { parseLayerMeta, parseLayer } = require('./parser');
 const { cpSource, mapAg, split, transform } = require('./util');
 
-const SPLIT = { chunkCol: 1, chunkRow: 1 };
+const SPLIT = { chunkCol: 2, chunkRow: 2 };
 const INPUT = { name: '888' }
 
 fs.rmdirSync(`../dist/${INPUT.name}`, { recursive: true })
@@ -29,7 +29,8 @@ fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
         if (err) return console.log(err);
         console.log('mapAg complete');
     })
-    _.forEach(split(layer, mapMeta), (item, index) => {
+    const splitLayers = split(layer, mapMeta);
+    _.forEach(_.flatten(_.chunk(splitLayers, SPLIT.chunkCol).reverse()), (item, index) => {
         const fileName = `${INPUT.name}/${INPUT.name}` + `${index}`.padStart(3, '0')
         fs.writeFile(`../dist/${fileName}.tmx`, transform(item, layerMeta, mapMeta), function (err) {
             if (err) return console.log(err);

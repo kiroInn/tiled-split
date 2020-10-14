@@ -1,2 +1,2 @@
-cp /Users/kiro/Src/cocos/mir2.core/src/tiles.tsx/{1.png,2.png,3.png,4.png,5.png,6.png,7.png,8.png,9.png,0.png} /Users/kiro/Src/cocos/legend/client/assets/resources/tiled/tiles&& 
+cp /Users/kiro/Src/cocos/mir2.core/src/tiles.tsx/{0.png,1.png,2.png,3.png} /Users/kiro/Src/cocos/legend/client/assets/resources/tiled/tiles&& 
 cp /Users/kiro/Src/cocos/mir2.core/src/objects2.tsx/{} /Users/kiro/Src/cocos/legend/client/assets/resources/tiled/objects2

@@ -19,12 +19,12 @@ function split(layer, mapMeta) {
         throw 'param is err please check'
     }
     const layerSplits = _.map(layer, layer => {
-        const matrix = _.chunk(layer.matrix, width).reverse().map(arr => arr.join(",")).join(",").split(',')
+        const matrix = _.chunk(layer.matrix, width).map(arr => arr.join(",")).join(",").split(',')
         return _.range(0, chunkCol * chunkRow).map(index => {
             const intervalY = Math.ceil(height / chunkRow);
             const intervalX = Math.ceil(width / chunkCol);
             const newMatrix = _.range(0, intervalY).map(indexY => {
-                const start = (index % chunkCol) * intervalX + (Math.floor(index / chunkRow) * intervalY + indexY) * width
+                const start = (index % chunkCol) * intervalX + (Math.floor(index / chunkRow) % chunkRow * intervalY + indexY) * width
                 const max = (Math.floor(index / chunkRow) * intervalY + indexY) * width + width;
                 const end = Math.min(start + intervalX, max);
                 return matrix.slice(start, end).join(',');
@@ -44,8 +44,8 @@ function split(layer, mapMeta) {
     })
 }
 
-function transform(layer, layerMeta, mapMeta) {
-    const matrix = [].concat.apply([], _.map(layer, item => item.matrix))
+function transform(layer, layerMeta) {
+    const matrix = [].concat.apply(['0'], _.map(layer, item => item.matrix))
     const { width, height } = _.get(layer, [0]);
     const allMap = _.sortBy(_.union(matrix))
     const tsx = `<tileset firstgid="1" name="saga-mir" columns="0">
