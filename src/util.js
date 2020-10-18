@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const sizeOf = require('image-size');
+const IMAGE_INFO = require('./image-info/index');
 
 function cpSource(layer, layerMeta) {
     const matrix = [].concat.apply([], _.map(layer, item => item.matrix))
@@ -52,11 +52,13 @@ function transform(layer, layerMeta) {
     const allMap = _.sortBy(_.union(matrix))
     const tsx = `<tileset firstgid="1" name="saga-mir" columns="0">
                     <tile id="0">
-                        <image width="1" height="1" source="../tiles/1950.png"/>
+                        <image width="96" height="64" source="../tiles/1950.png"/>
                     </tile>${_.map(layerMeta, meta => {
-        const { min, max, source, width = 1, height = 1 } = meta;
+        const { min, max, source } = meta;
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).map(item => {
             const newValue = item - min;
+            if(!_.has(IMAGE_INFO, `[${source}][${newValue}]`)){ console.error('can not find', source, newValue)}
+            const {width = 1, height = 1} = IMAGE_INFO[source][newValue];
             return `<tile id="${allMap.indexOf(item)}">
                         <image width="${width}" height="${height}" source="../${source}/${newValue}.png"/>
                     </tile>`;

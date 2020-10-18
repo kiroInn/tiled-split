@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "canvas": "^2.6.1",
     "image-size": "^0.9.1",
     "lodash": "^4.17.20",
+    "merge-images": "^2.0.0",
     "xml-js": "^1.6.11"
   }
 }
