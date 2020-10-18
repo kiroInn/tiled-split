@@ -52,19 +52,19 @@ function transform(layer, layerMeta) {
     const allMap = _.sortBy(_.union(matrix))
     const tsx = `<tileset firstgid="1" name="saga-mir" columns="0">
                     <tile id="0">
-                        <image width="1" height="1" source="tiles/empty.png"/>
+                        <image width="1" height="1" source="../tiles/1950.png"/>
                     </tile>${_.map(layerMeta, meta => {
         const { min, max, source, width = 1, height = 1 } = meta;
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).map(item => {
             const newValue = item - min;
             return `<tile id="${allMap.indexOf(item)}">
-                        <image width="${width}" height="${height}" source="${source}/${newValue}.png"/>
+                        <image width="${width}" height="${height}" source="../${source}/${newValue}.png"/>
                     </tile>`;
         }).join('')
     }).join('')}
     </tileset> `
 
-    const matrixStr = _.map(layer, item => {
+    const matrixStr = _.map(_.filter(layer, item =>  item.name !== 'barrier'), item => {
         const { name, matrix } = item;
         const isBarrier = name === 'barrier';
         const newM = _.map(matrix, matrixItem => {
@@ -76,9 +76,8 @@ function transform(layer, layerMeta) {
         <data encoding="csv">\n${_.chunk(newM, width).map(newItem => newItem.join(",")).join(',\n')}\n</data>
                 </layer>`
     }).join(' ');
-    return `
-    <?xml version="1.0" encoding="UTF-8"?>
-    <map version="1.0" tiledversion="1.1.2" orientation="orthogonal" width="${width}" height="${height}" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
+    return `<?xml version="1.0" encoding="UTF-8"?>
+    <map version="1.0" orientation="orthogonal" width="${width}" height="${height}" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
     ${tsx}
     ${matrixStr}
     </map>`;
