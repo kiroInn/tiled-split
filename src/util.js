@@ -1,4 +1,6 @@
 const _ = require('lodash');
+const sizeOf = require('image-size');
+
 function cpSource(layer, layerMeta) {
     const matrix = [].concat.apply([], _.map(layer, item => item.matrix))
     return _.map(layerMeta, meta => {
