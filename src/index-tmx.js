@@ -3,7 +3,6 @@ const fs = require('fs');
 const _ = require('lodash');
 const { parseLayerMeta, parseLayer } = require('./parser');
 const { cpSource, mapAg, split, transform } = require('./util');
-
 const SPLIT = { chunkCol: 5, chunkRow: 5 };
 const INPUT = { name: 'D717' }
 

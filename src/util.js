@@ -57,8 +57,8 @@ function transform(layer, layerMeta) {
         const { min, max, source } = meta;
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).map(item => {
             const newValue = item - min;
-            if(!_.has(IMAGE_INFO, `[${source}][${newValue}]`)){ console.error('can not find', source, newValue)}
-            const {width = 1, height = 1} = IMAGE_INFO[source][newValue];
+            if (!_.has(IMAGE_INFO, `[${source}][${newValue}]`)) { console.error('can not find', source, newValue) }
+            const { width = 1, height = 1 } = IMAGE_INFO[source][newValue];
             return `<tile id="${allMap.indexOf(item)}">
                         <image width="${width}" height="${height}" source="../${source}/${newValue}.png"/>
                     </tile>`;
@@ -66,7 +66,7 @@ function transform(layer, layerMeta) {
     }).join('')}
     </tileset> `
 
-    const matrixStr = _.map(_.filter(layer, item =>  item.name !== 'barrier'), item => {
+    const matrixStr = _.map(_.filter(layer, item => item.name !== 'barrier'), item => {
         const { name, matrix } = item;
         const isBarrier = name === 'barrier';
         const newM = _.map(matrix, matrixItem => {
@@ -89,27 +89,37 @@ function transformJS(layer, layerMeta) {
     const matrix = [].concat.apply(['0'], _.map(layer, item => item.matrix))
     const { width, height } = _.get(layer, [0]);
     const allMap = _.sortBy(_.union(matrix))
-    const tilesets = [{id:0, source: '../tiles/1950.png', width: 96, height: 64}];
+    const tilesets = [{ id: 0, source: '../tiles/1950.png', width: 96, height: 64 }];
     const tsx = _.forEach(layerMeta, meta => {
         const { min, max, source } = meta;
         _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).forEach(item => {
             const newValue = item - min;
-            if(!_.has(IMAGE_INFO, `[${source}][${newValue}]`)){ console.error('can not find', source, newValue)}
-            const {width = 1, height = 1} = IMAGE_INFO[source][newValue];
-            tilesets.push({id: allMap.indexOf(item), source: "../${source}/${newValue}.png", width, height})
+            if (!_.has(IMAGE_INFO, `[${source}][${newValue}]`)) { console.error('can not find', source, newValue) }
+            const { width = 1, height = 1 } = IMAGE_INFO[source][newValue];
+            tilesets.push({ id: allMap.indexOf(item), source: `../${source}/${newValue}.png`, width, height })
         })
     })
-    const layers = _.map(_.filter(layer, item =>  item.name !== 'barrier'), item => {
+    const layers = _.map(_.filter(layer, item => item.name !== 'barrier'), item => {
         const { name, matrix } = item;
         const isBarrier = name === 'barrier';
-        const newM = _.map(matrix, matrixItem => {
-            if (isBarrier) return matrixItem;
-            const newValue = allMap.indexOf(matrixItem);
-            return matrixItem == 0 ? 0 : newValue + 1;
-        });
-        return {name: name, values: _.chunk(newM, width).map(newItem => newItem.join(","))}
+        return {
+            name: name, values: _.map(matrix, matrixItem => {
+                if (isBarrier) return matrixItem;
+                const newValue = allMap.indexOf(matrixItem);
+                return matrixItem == 0 ? 0 : newValue + 1;
+            })
+        }
     });
-    console.log()
+    const offsetWidth = Math.max(..._.map(tilesets, tiled => tiled.width))
+    const offsetHeight = Math.max(..._.map(tilesets, tiled => tiled.height))
+    return `
+    module.exports = {
+    offsetWidth:${offsetWidth},
+    offsetHeight:${offsetHeight},
+    tilesets:${JSON.stringify(tilesets)},
+    layers:${JSON.stringify(layers)}
+    }
+    `
 }
 
 module.exports = {
