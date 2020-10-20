@@ -114,6 +114,8 @@ function transformJS(layer, layerMeta) {
     const offsetHeight = Math.max(..._.map(tilesets, tiled => tiled.height))
     return `
     module.exports = {
+    width:${width},
+    height:${height},
     offsetWidth:${offsetWidth},
     offsetHeight:${offsetHeight},
     tilesets:${JSON.stringify(tilesets)},
