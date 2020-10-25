@@ -31,7 +31,7 @@ fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
     })
     const splitLayers = split(layer, mapMeta);
     _.forEach(_.flatten(_.chunk(splitLayers, SPLIT.chunkCol).reverse()), (item, index) => {
-        const fileName = `${INPUT.name}/${INPUT.name}` + `${index}`.padStart(3, '0')
+        const fileName = `${INPUT.name}/${INPUT.name}` + `${index}`.padStart(6, '0')
         console.log(fileName);
         fs.writeFile(`../dist/${fileName.toLowerCase()}.js`, transformJS(item, layerMeta, mapMeta), function (err) {
             if (err) return console.log(err);
@@ -39,3 +39,16 @@ fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
         })
     })
 });
+
+// const result = _.flatten(_.map(layers, layer => {
+//     const newValues = _.flatten(_.chunk(layer.values, width).map((value, row) => {
+//         return _.map(value, (item, column) => {
+//             const { source, width, height } = item === 0 ? tilesets[0]: _.find(tilesets, tile => tile.id === item - 1);
+//             return { id: item, src: source, x: column * 48, y: row * 32 + (32 - height) +  offsetHeight}
+//         })
+//     }));
+//     return {
+//         name: layer.name,
+//         values: _.flatten(_.chunk(newValues, width).reverse()).filter(item => item.src)
+//     }
+// }).map(layer => layer.values))

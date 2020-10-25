@@ -89,14 +89,14 @@ function transformJS(layer, layerMeta) {
     const matrix = [].concat.apply(['0'], _.map(layer, item => item.matrix))
     const { width, height } = _.get(layer, [0]);
     const allMap = _.sortBy(_.union(matrix))
-    const tilesets = [{ id: 0, source: '../tiles/1950.png', width: 96, height: 64 }];
+    const tilesets = [{ id: 0, source: '', width: 96, height: 64 }];
     const tsx = _.forEach(layerMeta, meta => {
         const { min, max, source } = meta;
         _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).forEach(item => {
             const newValue = item - min;
             if (!_.has(IMAGE_INFO, `[${source}][${newValue}]`)) { console.error('can not find', source, newValue) }
             const { width = 1, height = 1 } = IMAGE_INFO[source][newValue];
-            tilesets.push({ id: allMap.indexOf(item), source: `../${source}/${newValue}.png`, width, height })
+            tilesets.push({ id: allMap.indexOf(item), source: `/res/raw-assets/resources/tiled/${source}/${newValue}.png`, width, height })
         })
     })
     const layers = _.map(_.filter(layer, item => item.name !== 'barrier'), item => {
@@ -110,8 +110,8 @@ function transformJS(layer, layerMeta) {
             })
         }
     });
-    const offsetWidth = Math.max(..._.map(tilesets, tiled => tiled.width))
-    const offsetHeight = Math.max(..._.map(tilesets, tiled => tiled.height))
+    const offsetWidth = Math.max(..._.map(tilesets, tiled => tiled.width)) - 48
+    const offsetHeight = Math.max(..._.map(tilesets, tiled => tiled.height)) - 32
     return `
     module.exports = {
     width:${width},
