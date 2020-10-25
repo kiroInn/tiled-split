@@ -3,12 +3,12 @@ const fs = require('fs');
 const _ = require('lodash');
 const { parseLayerMeta, parseLayer } = require('./parser');
 const { cpSource, mapAg, split, transform } = require('./util');
-const SPLIT = { chunkCol: 5, chunkRow: 5 };
-const INPUT = { name: 'D717' }
+const SPLIT = { chunkCol: 2, chunkRow: 2 };
+const INPUT = { name: 'd515' }
 
 fs.rmdirSync(`../dist/${INPUT.name}`, { recursive: true })
 fs.mkdirSync(`../dist/${INPUT.name}`, { recursive: true })
-fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
+fs.readFile(`map/${INPUT.name}.tmx`, 'utf8', function (err, data) {
     if (err) {
         return console.log(err);
     }
