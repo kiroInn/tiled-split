@@ -3,8 +3,8 @@ const fs = require('fs');
 const _ = require('lodash');
 const { parseLayerMeta, parseLayer } = require('./parser');
 const { cpSource, mapAg, split, transform } = require('./util');
-const SPLIT = { chunkCol: 2, chunkRow: 2 };
-const INPUT = { name: 'd515' }
+const SPLIT = { chunkCol: 35, chunkRow: 35 };
+const INPUT = { name: '0' }
 
 fs.rmdirSync(`../dist/${INPUT.name}`, { recursive: true })
 fs.mkdirSync(`../dist/${INPUT.name}`, { recursive: true })
@@ -24,7 +24,7 @@ fs.readFile(`map/${INPUT.name}.tmx`, 'utf8', function (err, data) {
         if (err) return console.log(err);
         console.log('cpSource complete');
     })
-    fs.writeFile(`../dist/${INPUT.name}/${INPUT.name}.mapag`, mapAg(layer, layerMeta), function (err) {
+    fs.writeFile(`../dist/${INPUT.name}/${INPUT.name}.mapag`, mapAg(layer, mapMeta), function (err) {
         if (err) return console.log(err);
         console.log('mapAg complete');
     })

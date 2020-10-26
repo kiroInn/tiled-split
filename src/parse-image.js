@@ -3,7 +3,7 @@ const fs = require('fs');
 const _ = require('lodash');
 
 const base = '/Users/kiro/Src/cocos/mir2.core/src/';
-const source = 'objects6';
+const source = 'smtiles';
 const dirName = `${source}.wil`;
 function parseImages(dirName) {
     fs.readdir(dirName, function (err, filenames) {
@@ -12,7 +12,7 @@ function parseImages(dirName) {
             return;
         }
         const infoMap = _.reduce(filenames, (prev, filename) => {
-            if(filename.indexOf('79') > -1) console.log(filename)
+            if(filename.indexOf('66') > -1) console.log(filename)
             
             if (filename.indexOf('.png') > -1) {
                 const { width, height } = sizeOf(`${dirName}${filename}`)
