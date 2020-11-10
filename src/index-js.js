@@ -9,7 +9,7 @@ const INPUT = { name: 'D717' }
 
 fs.rmdirSync(`../dist/${INPUT.name}`, { recursive: true })
 fs.mkdirSync(`../dist/${INPUT.name}`, { recursive: true })
-fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
+fs.readFile(`map/${INPUT.name}.tmx`, 'utf8', function (err, data) {
     if (err) {
         return console.log(err);
     }
@@ -21,6 +21,7 @@ fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
         height: parseInt(_.get(mapInfo, 'map._attributes.height'), 10),
         chunkCol: SPLIT.chunkCol, chunkRow: SPLIT.chunkRow
     }
+    console.log(layer, mapMeta);
     fs.writeFile(`../dist/${INPUT.name}/${INPUT.name}-cp.sh`, cpSource(layer, layerMeta), function (err) {
         if (err) return console.log(err);
         console.log('cpSource complete');
@@ -30,9 +31,9 @@ fs.readFile(`${INPUT.name}.tmx`, 'utf8', function (err, data) {
         console.log('mapAg complete');
     })
     const splitLayers = split(layer, mapMeta);
+    console.log(splitLayers);
     _.forEach(_.flatten(_.chunk(splitLayers, SPLIT.chunkCol).reverse()), (item, index) => {
         const fileName = `${INPUT.name}/${INPUT.name}` + `${index}`.padStart(6, '0')
-        console.log(fileName);
         fs.writeFile(`../dist/${fileName.toLowerCase()}.js`, transformJS(item, layerMeta, mapMeta), function (err) {
             if (err) return console.log(err);
             console.log(`${fileName}  complete`);
