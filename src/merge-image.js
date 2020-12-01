@@ -16,7 +16,6 @@ _.chunk(layerData, mapWidth).forEach((rowData, row) => {
         }
     })
 })
-console.log(infos);
 mergeImages(infos, {
     width,
     height,
@@ -24,7 +23,6 @@ mergeImages(infos, {
     Canvas
 })
     .then(b64 => {
-        console.log(typeof b64)
         fs.writeFile(`./merge-images/test.png`, b64.replace(/^data:image\/png;base64,/, ""), 'base64', function (err) {
             if (err) return console.log(err);
             console.log(`image complete`);

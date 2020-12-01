@@ -3,8 +3,8 @@ const fs = require('fs');
 const _ = require('lodash');
 const { parseLayerMeta, parseLayer } = require('./parser');
 const { cpSource, mapAg, split, transform } = require('./util');
-const SPLIT = { chunkCol: 35, chunkRow: 35 };
-const INPUT = { name: '0' }
+const SPLIT = { chunkCol: 2, chunkRow: 2 };
+const INPUT = { name: 'd515' }
 
 fs.rmdirSync(`../dist/${INPUT.name}`, { recursive: true })
 fs.mkdirSync(`../dist/${INPUT.name}`, { recursive: true })

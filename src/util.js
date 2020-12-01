@@ -5,7 +5,6 @@ function cpSource(layer, layerMeta) {
     const matrix = [].concat.apply([], _.map(layer, item => item.matrix))
     return _.map(layerMeta, meta => {
         const { min, max, from, source } = meta;
-        console.log('form', from)
         return `cp /Users/kiro/Src/cocos/mir2.core/src/${from.replace('.tsx', '.wil')}/{${_.union(matrix).filter(matrixItem => (matrixItem >= min && matrixItem < max)).map(item => item - min).map(item => `${item}.png`).join(',')}} /Users/kiro/Src/cocos/legend/client/assets/resources/tiled/${source}`
     }).join('&& \n');
 }
@@ -50,13 +49,11 @@ function split(layer, mapMeta) {
 function transform(layer, layerMeta) {
     const matrix = [].concat.apply(['0'], _.map(layer, item => item.matrix))
     const { width, height } = _.get(layer, [0]);
-    console.log(layerMeta)
     const allMap = _.sortBy(_.union(matrix))
     const tsx = `<tileset firstgid="1" name="saga-mir" columns="0">
                    ${_.map(layerMeta, meta => {
         const { min, max, source } = meta;
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).map(item => {
-            console.log('newValue', source, item)
             const newValue = item - min;
             if (!_.has(IMAGE_INFO, `[${source}][${newValue}]`)) { console.error('can not find', source, newValue) }
             const { width = 1, height = 1 } = IMAGE_INFO[source][newValue];
@@ -133,16 +130,6 @@ function transformJS(layer, layerMeta) {
         offsetHeight:${offsetHeight},
         values: ${JSON.stringify(result)}
     }`;
-    // return `
-    // module.exports = {
-    // width:${width},
-    // height:${height},
-    // offsetWidth:${offsetWidth},
-    // offsetHeight:${offsetHeight},
-    // tilesets:${JSON.stringify(tilesets)},
-    // layers:${JSON.stringify(layers)}
-    // }
-    // `
 }
 
 module.exports = {
