@@ -10,7 +10,6 @@ function cpSource(layer, layerMeta) {
 }
 
 function mapAg(layer, mapMeta) {
-    console.log('xxxxxxxx', mapMeta);
     const { width, height } = mapMeta;
     const { matrix } = _.find(layer, item => item.name === 'barrier') || {}
     return `${width},${height},${_.chunk(matrix, width).reverse().map(arr => arr.join(",")).join(",")}`
@@ -95,7 +94,7 @@ function transformJS(layer, layerMeta) {
             const newValue = item - min;
             if (!_.has(IMAGE_INFO, `[${source}][${newValue}]`)) { console.error('can not find', source, newValue) }
             const { width = 1, height = 1 } = IMAGE_INFO[source][newValue];
-            tilesets.push({ id: allMap.indexOf(item), source: `tiled/${source}/${newValue}`, width, height })
+            tilesets.push({ id: allMap.indexOf(item), source: `tiled/${source}/${newValue}.png`, width, height })
         })
     })
     const layers = _.map(_.filter(layer, item => item.name !== 'barrier'), item => {
