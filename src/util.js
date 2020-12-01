@@ -53,9 +53,7 @@ function transform(layer, layerMeta) {
     console.log(layerMeta)
     const allMap = _.sortBy(_.union(matrix))
     const tsx = `<tileset firstgid="1" name="saga-mir" columns="0">
-                    <tile id="0">
-                        <image width="96" height="64" source="../tiles/1950.png"/>
-                    </tile>${_.map(layerMeta, meta => {
+                   ${_.map(layerMeta, meta => {
         const { min, max, source } = meta;
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).map(item => {
             console.log('newValue', source, item)
@@ -116,18 +114,17 @@ function transformJS(layer, layerMeta) {
     const offsetWidth = Math.max(..._.map(tilesets, tiled => tiled.width)) - 48
     const offsetHeight = Math.max(..._.map(tilesets, tiled => tiled.height)) - 32
     const result = _.flatten(_.map(layers, layer => {
-    const newValues = _.flatten(_.chunk(layer.values, width).map((value, row) => {
-        return _.map(value, (item, column) => {
-            const { source, width, height } = item === 0 ? tilesets[0]: _.find(tilesets, tile => tile.id === item - 1);
-            return { id: item, src: source, x: column * 48, y: row * 32 + (32 - height) +  offsetHeight}
-        })
-    }));
-    console.log(newValues);
-    return {
-        name: layer.name,
-        values: _.flatten(_.chunk(newValues, width).reverse()).filter(item => item.id !== 0)
-    }
-}).map(layer => layer.values))
+        const newValues = _.flatten(_.chunk(layer.values, width).map((value, row) => {
+            return _.map(value, (item, column) => {
+                const { source, width, height } = item === 0 ? tilesets[0] : _.find(tilesets, tile => tile.id === item - 1);
+                return { id: item, src: source, x: column * 48, y: row * 32 + (32 - height) + offsetHeight }
+            })
+        }));
+        return {
+            name: layer.name,
+            values: _.flatten(_.chunk(newValues, width)).filter(item => item.id !== 0)
+        }
+    }).map(layer => layer.values))
     return `
     module.exports = {
         width:${width},
