@@ -7,7 +7,7 @@ const { cpSource, mapAg, split, transformJS } = require('./util');
 const SPLIT = { chunkCol: 2, chunkRow: 2 };
 const INPUT = { name: 'd515' }
 
-fs.rmdirSync(`../dist/${INPUT.name}`, { recursive: true })
+// fs.rmdirSync(`../dist/${INPUT.name}`, { recursive: true })
 fs.mkdirSync(`../dist/${INPUT.name}`, { recursive: true })
 fs.readFile(`map/${INPUT.name}.tmx`, 'utf8', function (err, data) {
     if (err) {
@@ -26,7 +26,7 @@ fs.readFile(`map/${INPUT.name}.tmx`, 'utf8', function (err, data) {
         if (err) return console.log(err);
         console.log('cpSource complete');
     })
-    fs.writeFile(`../dist/${INPUT.name}/${INPUT.name}.mapag`, mapAg(layer, layerMeta), function (err) {
+    fs.writeFile(`../dist/${INPUT.name}/${INPUT.name}.mapag`, mapAg(layer, mapMeta), function (err) {
         if (err) return console.log(err);
         console.log('mapAg complete');
     })

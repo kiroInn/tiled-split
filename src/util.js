@@ -10,6 +10,7 @@ function cpSource(layer, layerMeta) {
 }
 
 function mapAg(layer, mapMeta) {
+    console.log('xxxxxxxx', mapMeta);
     const { width, height } = mapMeta;
     const { matrix } = _.find(layer, item => item.name === 'barrier') || {}
     return `${width},${height},${_.chunk(matrix, width).reverse().map(arr => arr.join(",")).join(",")}`
