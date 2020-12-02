@@ -94,7 +94,7 @@ function transformJS(layer, layerMeta) {
             const newValue = item - min;
             if (!_.has(IMAGE_INFO, `[${source}][${newValue}]`)) { console.error('can not find', source, newValue) }
             const { width = 1, height = 1 } = IMAGE_INFO[source][newValue];
-            tilesets.push({ id: allMap.indexOf(item), source: `tiled/${source}/${newValue}.png`, width, height })
+            tilesets.push({ id: allMap.indexOf(item), source: `tiled/${source}/${newValue}`, width, height })
         })
     })
     const layers = _.map(_.filter(layer, item => item.name !== 'barrier'), item => {
@@ -122,14 +122,21 @@ function transformJS(layer, layerMeta) {
             values: _.flatten(_.chunk(newValues, width)).filter(item => item.id !== 0)
         }
     }).map(layer => layer.values))
-    return `
-    module.exports = {
-        width:${width},
-        height:${height},
-        offsetWidth:${offsetWidth},
-        offsetHeight:${offsetHeight},
-        values: ${JSON.stringify(result)}
+    return `{
+        "width":${width},
+        "height":${height},
+        "offsetWidth":${offsetWidth},
+        "offsetHeight":${offsetHeight},
+        "values": ${JSON.stringify(result)}
     }`;
+    // return `
+    // module.exports = {
+    //     width:${width},
+    //     height:${height},
+    //     offsetWidth:${offsetWidth},
+    //     offsetHeight:${offsetHeight},
+    //     values: ${JSON.stringify(result)}
+    // }`;
 }
 
 module.exports = {

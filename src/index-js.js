@@ -29,11 +29,11 @@ function splitMap(SPLIT) {
             if (err) return console.log(err);
             console.log('mapAg complete');
         })
-        layer = _.filter(layer, item => item.name === 'obj');
+        layer = _.filter(layer, item => item.name !== 'obj');
         const splitLayers = split(layer, mapMeta);
         _.forEach(_.flatten(_.chunk(splitLayers, SPLIT.chunkCol).reverse()), (item, index) => {
             const fileName = `${SPLIT.name}/${SPLIT.name}` + `${index}`.padStart(6, '0')
-            fs.writeFile(`../dist/${fileName.toLowerCase()}.js`, transformJS(item, layerMeta, mapMeta), function (err) {
+            fs.writeFile(`../dist/${fileName.toLowerCase()}.json`, transformJS(item, layerMeta, mapMeta), function (err) {
                 if (err) return console.log(err);
                 console.log(`${fileName}  complete`);
             })
