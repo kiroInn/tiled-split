@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <map version="1.0" orientation="orthogonal" width="10" height="20" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
+    <tileset firstgid="1" name="saga-mir" columns="0">
+                   <tile id="1">
+                        <image width="48" height="224" source="../objects4/3100.png"/>
+                    </tile><tile id="2">
+                        <image width="48" height="256" source="../objects4/3101.png"/>
+                    </tile><tile id="3">
+                        <image width="48" height="256" source="../objects4/3102.png"/>
+                    </tile><tile id="4">
+                        <image width="48" height="32" source="../objects4/3275.png"/>
+                    </tile><tile id="5">
+                        <image width="48" height="32" source="../objects4/3276.png"/>
+                    </tile><tile id="6">
+                        <image width="48" height="32" source="../objects4/3277.png"/>
+                    </tile><tile id="7">
+                        <image width="48" height="32" source="../objects4/3278.png"/>
+                    </tile><tile id="8">
+                        <image width="48" height="32" source="../objects4/3285.png"/>
+                    </tile><tile id="9">
+                        <image width="48" height="32" source="../objects4/3286.png"/>
+                    </tile><tile id="10">
+                        <image width="48" height="32" source="../objects4/3288.png"/>
+                    </tile><tile id="11">
+                        <image width="48" height="32" source="../objects4/3289.png"/>
+                    </tile><tile id="12">
+                        <image width="48" height="32" source="../objects4/3316.png"/>
+                    </tile><tile id="13">
+                        <image width="48" height="160" source="../objects4/3324.png"/>
+                    </tile><tile id="14">
+                        <image width="48" height="32" source="../objects4/3325.png"/>
+                    </tile><tile id="15">
+                        <image width="48" height="32" source="../objects4/3326.png"/>
+                    </tile><tile id="16">
+                        <image width="48" height="160" source="../objects4/3327.png"/>
+                    </tile><tile id="17">
+                        <image width="48" height="32" source="../objects4/3328.png"/>
+                    </tile><tile id="18">
+                        <image width="48" height="32" source="../objects4/3329.png"/>
+                    </tile><tile id="19">
+                        <image width="48" height="32" source="../objects4/3330.png"/>
+                    </tile><tile id="20">
+                        <image width="48" height="192" source="../objects4/3331.png"/>
+                    </tile><tile id="21">
+                        <image width="48" height="32" source="../objects4/3332.png"/>
+                    </tile><tile id="22">
+                        <image width="48" height="32" source="../objects4/3333.png"/>
+                    </tile><tile id="23">
+                        <image width="48" height="32" source="../objects4/3334.png"/>
+                    </tile><tile id="24">
+                        <image width="48" height="32" source="../objects4/3335.png"/>
+                    </tile><tile id="25">
+                        <image width="48" height="32" source="../objects4/3364.png"/>
+                    </tile><tile id="26">
+                        <image width="48" height="32" source="../objects4/3365.png"/>
+                    </tile><tile id="27">
+                        <image width="48" height="160" source="../objects4/3366.png"/>
+                    </tile><tile id="28">
+                        <image width="48" height="32" source="../objects4/3374.png"/>
+                    </tile><tile id="29">
+                        <image width="48" height="192" source="../objects6/764.png"/>
+                    </tile><tile id="30">
+                        <image width="48" height="32" source="../objects6/765.png"/>
+                    </tile><tile id="31">
+                        <image width="48" height="192" source="../objects6/766.png"/>
+                    </tile><tile id="32">
+                        <image width="48" height="32" source="../objects6/767.png"/>
+                    </tile><tile id="33">
+                        <image width="48" height="32" source="../objects6/768.png"/>
+                    </tile><tile id="34">
+                        <image width="48" height="224" source="../objects6/769.png"/>
+                    </tile><tile id="35">
+                        <image width="48" height="32" source="../objects6/770.png"/>
+                    </tile><tile id="36">
+                        <image width="48" height="32" source="../objects6/771.png"/>
+                    </tile><tile id="37">
+                        <image width="48" height="32" source="../objects6/772.png"/>
+                    </tile>
+    </tileset> 
+    <layer name="obj" width="10" height="20">
+        <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+28,14,0,0,0,0,0,0,0,0,
+27,24,21,0,0,0,0,0,0,0,
+26,23,20,17,0,0,0,0,0,0,
+29,22,19,16,14,0,0,0,0,0,
+9,0,18,15,24,21,0,0,0,0,
+10,0,0,25,23,20,17,0,0,0,
+0,0,0,0,22,19,16,0,0,0,
+0,0,4,3,2,18,15,30,0,0,
+0,0,12,0,0,0,25,37,35,0,
+0,0,11,0,0,0,0,36,34,32,
+0,0,0,0,0,0,3,2,33,31,
+0,0,9,0,5,6,0,0,0,38,
+0,0,10,0,7,8,0,0,0,0,
+0,0,13,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+                </layer>
+    </map>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <map version="1.0" orientation="orthogonal" width="10" height="20" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
+    <tileset firstgid="1" name="saga-mir" columns="0">
+                   <tile id="1">
+                        <image width="48" height="452" source="../objects/1401.png"/>
+                    </tile><tile id="2">
+                        <image width="48" height="483" source="../objects/1402.png"/>
+                    </tile><tile id="3">
+                        <image width="48" height="401" source="../objects/2557.png"/>
+                    </tile><tile id="4">
+                        <image width="48" height="400" source="../objects/2563.png"/>
+                    </tile><tile id="5">
+                        <image width="48" height="404" source="../objects/2572.png"/>
+                    </tile><tile id="6">
+                        <image width="48" height="419" source="../objects/2573.png"/>
+                    </tile><tile id="7">
+                        <image width="48" height="403" source="../objects/2574.png"/>
+                    </tile><tile id="8">
+                        <image width="48" height="401" source="../objects/2576.png"/>
+                    </tile>
+    </tileset> 
+    <layer name="obj" width="10" height="20">
+        <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,8,
+0,0,0,0,0,0,0,0,7,0,
+0,0,0,0,0,0,0,6,0,0,
+0,0,0,0,0,0,9,0,0,0,
+0,0,0,0,0,5,0,0,0,0,
+0,0,0,0,4,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,2,3,0,0,0,0
+</data>
+                </layer>
+    </map>

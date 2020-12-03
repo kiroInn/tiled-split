@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <map version="1.0" orientation="orthogonal" width="10" height="20" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
+    <tileset firstgid="1" name="saga-mir" columns="0">
+                   <tile id="1">
+                        <image width="48" height="224" source="../objects7/3745.png"/>
+                    </tile><tile id="2">
+                        <image width="48" height="32" source="../objects7/3765.png"/>
+                    </tile><tile id="3">
+                        <image width="48" height="32" source="../objects7/3766.png"/>
+                    </tile><tile id="4">
+                        <image width="48" height="32" source="../objects7/3767.png"/>
+                    </tile><tile id="5">
+                        <image width="48" height="32" source="../objects7/3768.png"/>
+                    </tile><tile id="6">
+                        <image width="48" height="32" source="../objects7/3769.png"/>
+                    </tile><tile id="7">
+                        <image width="48" height="32" source="../objects7/4003.png"/>
+                    </tile><tile id="8">
+                        <image width="48" height="160" source="../objects7/4004.png"/>
+                    </tile><tile id="9">
+                        <image width="48" height="32" source="../objects7/4007.png"/>
+                    </tile><tile id="10">
+                        <image width="48" height="192" source="../objects7/4008.png"/>
+                    </tile><tile id="11">
+                        <image width="48" height="32" source="../objects7/4057.png"/>
+                    </tile><tile id="12">
+                        <image width="48" height="32" source="../objects7/4058.png"/>
+                    </tile><tile id="13">
+                        <image width="48" height="256" source="../objects7/4059.png"/>
+                    </tile>
+    </tileset> 
+    <layer name="obj" width="10" height="20">
+        <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,2,
+14,0,0,0,0,0,0,0,0,7,
+13,0,0,0,0,0,0,0,0,6,
+12,0,0,0,0,0,0,0,0,5,
+0,0,0,0,0,0,0,0,0,4,
+0,0,0,0,0,0,0,0,0,3,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,11,9,0,0,0,0,0,
+0,0,0,10,8,0,0,0,0,0
+</data>
+                </layer>
+    </map>

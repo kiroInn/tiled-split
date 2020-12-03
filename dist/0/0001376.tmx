@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <map version="1.0" orientation="orthogonal" width="10" height="20" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
+    <tileset firstgid="1" name="saga-mir" columns="0">
+                   <tile id="1">
+                        <image width="48" height="564" source="../objects/1378.png"/>
+                    </tile><tile id="2">
+                        <image width="48" height="561" source="../objects/1379.png"/>
+                    </tile><tile id="3">
+                        <image width="48" height="554" source="../objects/1380.png"/>
+                    </tile><tile id="4">
+                        <image width="48" height="537" source="../objects/1381.png"/>
+                    </tile><tile id="5">
+                        <image width="48" height="507" source="../objects/1382.png"/>
+                    </tile><tile id="6">
+                        <image width="48" height="472" source="../objects/1383.png"/>
+                    </tile><tile id="7">
+                        <image width="48" height="328" source="../objects/1384.png"/>
+                    </tile><tile id="8">
+                        <image width="48" height="452" source="../objects/1401.png"/>
+                    </tile><tile id="9">
+                        <image width="48" height="483" source="../objects/1402.png"/>
+                    </tile><tile id="10">
+                        <image width="48" height="526" source="../objects/1403.png"/>
+                    </tile><tile id="11">
+                        <image width="48" height="564" source="../objects/1404.png"/>
+                    </tile><tile id="12">
+                        <image width="48" height="604" source="../objects/1405.png"/>
+                    </tile><tile id="13">
+                        <image width="48" height="553" source="../objects/1406.png"/>
+                    </tile><tile id="14">
+                        <image width="48" height="514" source="../objects/1407.png"/>
+                    </tile><tile id="15">
+                        <image width="48" height="438" source="../objects/1408.png"/>
+                    </tile>
+    </tileset> 
+    <layer name="obj" width="10" height="20">
+        <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,6,7,8,0,0,0,
+2,3,4,5,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,9,10,0,0,0,0,15,16,
+0,0,0,0,11,12,0,14,0,0,
+0,0,0,0,0,0,13,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+6,7,8,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+                </layer>
+    </map>

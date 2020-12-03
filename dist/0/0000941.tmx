@@ -1,148 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <map version="1.0" orientation="orthogonal" width="20" height="20" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
+    <map version="1.0" orientation="orthogonal" width="10" height="20" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
     <tileset firstgid="1" name="saga-mir" columns="0">
-                    <tile id="0">
-                        <image width="96" height="64" source="../tiles/1950.png"/>
-                    </tile><tile id="1">
-                        <image width="96" height="64" source="../tiles/0.png"/>
+                   <tile id="1">
+                        <image width="48" height="374" source="../objects/94.png"/>
                     </tile><tile id="2">
-                        <image width="96" height="64" source="../tiles/1450.png"/>
+                        <image width="48" height="375" source="../objects/95.png"/>
                     </tile><tile id="3">
-                        <image width="96" height="64" source="../tiles/1451.png"/>
+                        <image width="48" height="382" source="../objects/96.png"/>
                     </tile><tile id="4">
-                        <image width="96" height="64" source="../tiles/1452.png"/>
+                        <image width="48" height="378" source="../objects/97.png"/>
                     </tile><tile id="5">
-                        <image width="96" height="64" source="../tiles/1453.png"/>
+                        <image width="48" height="382" source="../objects/102.png"/>
                     </tile><tile id="6">
-                        <image width="96" height="64" source="../tiles/1454.png"/>
+                        <image width="48" height="378" source="../objects/103.png"/>
                     </tile><tile id="7">
-                        <image width="96" height="64" source="../tiles/1455.png"/>
+                        <image width="48" height="374" source="../objects/104.png"/>
                     </tile><tile id="8">
-                        <image width="96" height="64" source="../tiles/1456.png"/>
+                        <image width="48" height="378" source="../objects/105.png"/>
                     </tile><tile id="9">
-                        <image width="96" height="64" source="../tiles/1457.png"/>
-                    </tile><tile id="10">
-                        <image width="96" height="64" source="../tiles/1460.png"/>
-                    </tile><tile id="11">
-                        <image width="96" height="64" source="../tiles/1461.png"/>
-                    </tile><tile id="12">
-                        <image width="96" height="64" source="../tiles/1462.png"/>
-                    </tile><tile id="13">
-                        <image width="96" height="64" source="../tiles/1470.png"/>
-                    </tile><tile id="14">
-                        <image width="96" height="64" source="../tiles/1472.png"/>
-                    </tile><tile id="31">
-                        <image width="96" height="64" source="../tiles/950.png"/>
-                    </tile><tile id="32">
-                        <image width="96" height="64" source="../tiles/951.png"/>
-                    </tile><tile id="33">
-                        <image width="96" height="64" source="../tiles/952.png"/>
-                    </tile><tile id="34">
-                        <image width="96" height="64" source="../tiles/953.png"/>
-                    </tile><tile id="35">
-                        <image width="96" height="64" source="../tiles/954.png"/>
-                    </tile><tile id="15">
-                        <image width="48" height="336" source="../objects/1361.png"/>
-                    </tile><tile id="16">
-                        <image width="48" height="401" source="../objects/1362.png"/>
-                    </tile><tile id="17">
-                        <image width="48" height="371" source="../objects/1363.png"/>
-                    </tile><tile id="18">
-                        <image width="48" height="358" source="../objects/1364.png"/>
-                    </tile><tile id="19">
-                        <image width="48" height="317" source="../objects/1365.png"/>
-                    </tile><tile id="20">
-                        <image width="48" height="180" source="../objects/1366.png"/>
-                    </tile><tile id="21">
-                        <image width="48" height="345" source="../objects/1386.png"/>
-                    </tile><tile id="22">
-                        <image width="48" height="407" source="../objects/1387.png"/>
-                    </tile><tile id="23">
-                        <image width="48" height="457" source="../objects/1388.png"/>
-                    </tile><tile id="24">
-                        <image width="48" height="491" source="../objects/1389.png"/>
-                    </tile><tile id="25">
                         <image width="48" height="456" source="../objects/1390.png"/>
-                    </tile><tile id="26">
+                    </tile><tile id="10">
                         <image width="48" height="465" source="../objects/1391.png"/>
-                    </tile><tile id="27">
+                    </tile><tile id="11">
                         <image width="48" height="399" source="../objects/1392.png"/>
-                    </tile><tile id="28">
-                        <image width="48" height="249" source="../objects/1393.png"/>
-                    </tile><tile id="29">
-                        <image width="48" height="78" source="../objects/5107.png"/>
-                    </tile><tile id="30">
-                        <image width="48" height="98" source="../objects/5108.png"/>
                     </tile>
     </tileset> 
-    <layer name="base" width="20" height="20">
+    <layer name="obj" width="10" height="20">
         <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-32,0,34,0,33,0,14,0,3,0,6,0,12,0,11,0,4,0,6,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-33,0,33,0,34,0,15,0,6,0,3,0,6,0,3,0,5,0,7,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-35,0,36,0,34,0,10,0,13,0,6,0,6,0,6,0,5,0,4,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-35,0,35,0,34,0,8,0,11,0,6,0,7,0,7,0,6,0,6,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-36,0,34,0,33,0,14,0,6,0,6,0,3,0,7,0,4,0,5,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-9,0,36,0,35,0,15,0,3,0,3,0,3,0,4,0,6,0,6,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-12,0,9,0,8,0,11,0,5,0,4,0,7,0,3,0,3,0,5,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-3,0,12,0,11,0,6,0,7,0,6,0,6,0,3,0,5,0,5,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-6,0,6,0,3,0,6,0,5,0,6,0,7,0,3,0,6,0,5,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-4,0,6,0,3,0,7,0,4,0,7,0,5,0,7,0,3,0,6,0
-</data>
-                </layer> <layer name="mid" width="20" height="20">
-        <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
-                </layer> <layer name="obj" width="20" height="20">
-        <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,16,0,18,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,17,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,20,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-19,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,30,31,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,22,0,0,0,0,0,0,29,0,0,
-0,0,0,0,0,0,0,0,0,0,0,23,24,0,0,0,28,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,25,26,27,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,12,0,0,0,0,0,0,0,
+10,11,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,4,
+0,0,0,0,0,0,0,0,3,0,
+0,0,0,0,0,0,0,2,0,0,
+0,0,0,0,0,0,9,0,0,0,
+0,0,0,0,0,8,0,0,0,0,
+0,0,0,0,7,0,0,0,0,0,
+0,0,0,6,0,0,0,0,0,0,
+0,0,5,0,0,0,0,0,0,0,
+0,4,0,0,0,0,0,0,0,0
 </data>
                 </layer>
     </map>

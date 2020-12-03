@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <map version="1.0" orientation="orthogonal" width="10" height="20" tilewidth="48" tileheight="32" renderorder="right-down" infinite="0" nextobjectid="1">
+    <tileset firstgid="1" name="saga-mir" columns="0">
+                   <tile id="1">
+                        <image width="48" height="528" source="../objects/1815.png"/>
+                    </tile><tile id="2">
+                        <image width="48" height="513" source="../objects/1816.png"/>
+                    </tile><tile id="3">
+                        <image width="48" height="536" source="../objects/1817.png"/>
+                    </tile><tile id="4">
+                        <image width="48" height="517" source="../objects/1818.png"/>
+                    </tile><tile id="5">
+                        <image width="48" height="492" source="../objects/1819.png"/>
+                    </tile><tile id="6">
+                        <image width="48" height="486" source="../objects/1820.png"/>
+                    </tile><tile id="7">
+                        <image width="48" height="493" source="../objects/1821.png"/>
+                    </tile><tile id="8">
+                        <image width="48" height="518" source="../objects/1882.png"/>
+                    </tile><tile id="9">
+                        <image width="48" height="534" source="../objects/1883.png"/>
+                    </tile><tile id="10">
+                        <image width="48" height="542" source="../objects/1884.png"/>
+                    </tile><tile id="11">
+                        <image width="48" height="135" source="../objects/1937.png"/>
+                    </tile>
+    </tileset> 
+    <layer name="obj" width="10" height="20">
+        <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+9,0,0,0,0,0,0,0,0,0,
+0,10,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,11,2,3,0,0,0,0,0,
+0,0,0,0,0,4,0,0,0,0,
+12,0,0,0,0,0,5,0,0,0,
+0,0,0,0,0,0,0,6,0,0,
+0,0,0,0,0,0,0,0,7,0,
+0,0,0,0,0,0,0,0,0,8,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+                </layer>
+    </map>
