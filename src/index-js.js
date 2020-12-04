@@ -20,14 +20,11 @@ function splitMap(SPLIT) {
             height: parseInt(_.get(mapInfo, 'map._attributes.height'), 10),
             chunkCol: SPLIT.chunkCol, chunkRow: SPLIT.chunkRow
         }
-        console.log(layer, mapMeta);
         fs.writeFile(`../dist/${SPLIT.name}/${SPLIT.name}-cp.sh`, cpSource(layer, layerMeta), function (err) {
             if (err) return console.log(err);
-            console.log('cpSource complete');
         })
         fs.writeFile(`../dist/${SPLIT.name}/${SPLIT.name}.mapag`, mapAg(layer, mapMeta), function (err) {
             if (err) return console.log(err);
-            console.log('mapAg complete');
         })
         layer = _.filter(layer, item => item.name !== 'obj');
         const splitLayers = split(layer, mapMeta);
@@ -35,7 +32,6 @@ function splitMap(SPLIT) {
             const fileName = `${SPLIT.name}/${SPLIT.name}` + `${index}`.padStart(6, '0')
             fs.writeFile(`../dist/${fileName.toLowerCase()}.json`, transformJS(item, layerMeta, mapMeta), function (err) {
                 if (err) return console.log(err);
-                console.log(`${fileName}  complete`);
             })
         })
     });

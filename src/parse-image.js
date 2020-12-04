@@ -12,8 +12,6 @@ function parseImages(dirName) {
             return;
         }
         const infoMap = _.reduce(filenames, (prev, filename) => {
-            if(filename.indexOf('66') > -1) console.log(filename)
-            
             if (filename.indexOf('.png') > -1) {
                 const { width, height } = sizeOf(`${dirName}${filename}`)
                 const prefix = filename.substr(0, filename.length - 4)
@@ -23,7 +21,6 @@ function parseImages(dirName) {
         }, {})
         fs.writeFile(`./image-info/${source}.js`, `module.exports = ${JSON.stringify(infoMap)}`, function (err) {
             if (err) return console.log(err);
-            console.log(`image ${source} complete`);
         })
     });
 }

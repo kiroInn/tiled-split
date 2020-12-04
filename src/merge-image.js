@@ -11,8 +11,8 @@ const height = mapHeight * 32
 const infos = []
 _.chunk(layerData, mapWidth).forEach((rowData, row) => {
     rowData.forEach((data, column) => {
-        if(data > 0){
-            infos.push({src: '../images/test.png', x: column*48, y: row*32})
+        if (data > 0) {
+            infos.push({ src: '../images/test.png', x: column * 48, y: row * 32 })
         }
     })
 })
@@ -25,6 +25,5 @@ mergeImages(infos, {
     .then(b64 => {
         fs.writeFile(`./merge-images/test.png`, b64.replace(/^data:image\/png;base64,/, ""), 'base64', function (err) {
             if (err) return console.log(err);
-            console.log(`image complete`);
         })
     });
