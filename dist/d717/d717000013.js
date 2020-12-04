@@ -1,8 +1,0 @@
-
-    module.exports = {
-        width:20,
-        height:20,
-        offsetWidth:48,
-        offsetHeight:192,
-        values: [{"id":10,"src":"tiled/objects7/5531.png","x":240,"y":0},{"id":19,"src":"tiled/objects7/5543.png","x":288,"y":0},{"id":18,"src":"tiled/objects7/5541.png","x":336,"y":192},{"id":15,"src":"tiled/objects7/5537.png","x":384,"y":192},{"id":12,"src":"tiled/objects7/5533.png","x":432,"y":192},{"id":17,"src":"tiled/objects7/5540.png","x":336,"y":224},{"id":14,"src":"tiled/objects7/5536.png","x":384,"y":224},{"id":11,"src":"tiled/objects7/5532.png","x":432,"y":224},{"id":21,"src":"tiled/objects7/5621.png","x":768,"y":224},{"id":24,"src":"tiled/objects7/5624.png","x":816,"y":224},{"id":22,"src":"tiled/objects7/5622.png","x":864,"y":224},{"id":16,"src":"tiled/objects7/5539.png","x":336,"y":256},{"id":13,"src":"tiled/objects7/5535.png","x":384,"y":256},{"id":20,"src":"tiled/objects7/5544.png","x":432,"y":256},{"id":25,"src":"tiled/objects7/5625.png","x":768,"y":256},{"id":23,"src":"tiled/objects7/5623.png","x":816,"y":256},{"id":26,"src":"tiled/objects7/5626.png","x":864,"y":256},{"id":6,"src":"tiled/objects7/5433.png","x":48,"y":384},{"id":7,"src":"tiled/objects7/5434.png","x":96,"y":384},{"id":8,"src":"tiled/objects7/5435.png","x":48,"y":416},{"id":9,"src":"tiled/objects7/5436.png","x":96,"y":416},{"id":4,"src":"tiled/objects7/5389.png","x":720,"y":512},{"id":3,"src":"tiled/objects7/5388.png","x":768,"y":512},{"id":2,"src":"tiled/objects7/5387.png","x":720,"y":544},{"id":5,"src":"tiled/objects7/5390.png","x":768,"y":544}]
-    }

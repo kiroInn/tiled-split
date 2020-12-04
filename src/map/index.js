@@ -6,8 +6,8 @@ module.exports = [
     },
     {
         name: 'd515',
-        chunkCol: 4,
-        chunkRow: 2
+        chunkCol: 1,
+        chunkRow: 1
     },
     {
         name: 'D717',
