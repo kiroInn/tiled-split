@@ -25,11 +25,10 @@ function split(layer, mapMeta) {
         return _.range(0, chunkCol * chunkRow).map(index => {
             const intervalY = Math.ceil(height / chunkRow);
             const intervalX = Math.ceil(width / chunkCol);
+            const startRow = Math.floor(index * intervalX / width) * intervalY;
+            const startCol = Math.floor(index % width) % chunkCol * intervalX;
             const newMatrix = _.range(0, intervalY).map(indexY => {
-                const start = (index % chunkCol) * intervalX + (Math.floor(index / chunkRow) % chunkRow * intervalY + indexY) * width
-                const max = (Math.floor(index / chunkRow) * intervalY + indexY) * width + width;
-                const end = Math.min(start + intervalX, max);
-                return matrix.slice(start, end).join(',');
+                return _.chunk(matrix, width)[startRow + indexY].slice(startCol, startCol + intervalX).join(',');
             }).filter(item => item.length > 0);
             return {
                 name: layer.name,

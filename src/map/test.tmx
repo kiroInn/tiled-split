@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="4" height="4" tilewidth="48" tileheight="32" nextobjectid="1">
+  <tileset firstgid="1" source="tiles.tsx" />
+  <tileset firstgid="24982" source="objects2.tsx" />
+  <tileset firstgid="35006" source="objects6.tsx" />
+  <layer name="base" width="4" height="4">
+    <data encoding="csv">
+0,2,4,6,
+1,3,5,7,
+8,10,12,14,
+9,11,13,15
+</data>
+  </layer>
+  <layer name="barrier" width="4" height="4" visible="0">
+    <data encoding="csv">
+1,1,1,1,
+1,1,1,1,
+1,1,1,1,
+1,1,1,1
+</data>
+  </layer>
+  <layer name="obj" width="4" height="4">
+    <data encoding="csv">
+0,2,4,6,
+1,3,5,7,
+8,10,12,14,
+9,11,13,15
+</data>
+  </layer>
+</map>
