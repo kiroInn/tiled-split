@@ -49,7 +49,11 @@ function transform(layer, layerMeta) {
     const matrix = [].concat.apply(['0'], _.map(layer, item => item.matrix))
     const { width, height } = _.get(layer, [0]);
     const allMap = _.sortBy(_.union(matrix))
-    const tsx = `<tileset firstgid="1" name="saga-mir" columns="0">
+    const isNotEmptyTsx = _.some(_.map(layerMeta, meta => {
+        const { min, max } = meta;
+        return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max));
+    }), item => !_.isEmpty(item));
+    const tsx = isNotEmptyTsx ? `<tileset firstgid="1" name="saga-mir" columns="0">
                    ${_.map(layerMeta, meta => {
         const { min, max, source } = meta;
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).map(item => {
@@ -61,7 +65,7 @@ function transform(layer, layerMeta) {
                     </tile>`;
         }).join('')
     }).join('')}
-    </tileset> `
+    </tileset> `: ``
 
     const matrixStr = _.map(_.filter(layer, item => item.name !== 'barrier'), item => {
         const { name, matrix } = item;
@@ -87,7 +91,7 @@ function transformJS(layer, layerMeta) {
     const { width, height } = _.get(layer, [0]);
     const allMap = _.sortBy(_.union(matrix))
     const tilesets = [{ id: 0, source: '', width: 96, height: 64 }];
-    const tsx = _.forEach(layerMeta, meta => {
+    _.forEach(layerMeta, meta => {
         const { min, max, source } = meta;
         _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).forEach(item => {
             const newValue = item - min;
@@ -128,14 +132,6 @@ function transformJS(layer, layerMeta) {
         "offsetHeight":${offsetHeight},
         "values": ${JSON.stringify(result)}
     }`;
-    // return `
-    // module.exports = {
-    //     width:${width},
-    //     height:${height},
-    //     offsetWidth:${offsetWidth},
-    //     offsetHeight:${offsetHeight},
-    //     values: ${JSON.stringify(result)}
-    // }`;
 }
 
 module.exports = {

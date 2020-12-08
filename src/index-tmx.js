@@ -30,6 +30,7 @@ function splitMap(SPLIT) {
             const fileName = `${SPLIT.name}/${SPLIT.name}` + `${index}`.padStart(6, '0')
             fs.writeFile(`../dist/${fileName.toLowerCase()}.tmx`, transform(item, layerMeta, mapMeta), function (err) {
                 if (err) return console.log(err);
+                console.log('done', fileName.toLowerCase())
             })
         })
     });
