@@ -60,7 +60,10 @@ function transform(layer, layerMeta) {
             const newValue = item - min;
             if (!_.has(IMAGE_INFO, `[${source}][${newValue}]`)) { console.error('can not find', source, newValue) }
             const { width = 1, height = 1 } = IMAGE_INFO[source][newValue];
-            return `<tile id="${allMap.indexOf(item)}">
+            return `<tile id="0">
+                        <image width="96" height="64" source="../tiles/1950.png"/>
+                    </tile>
+                    <tile id="${allMap.indexOf(item)}">
                         <image width="${width}" height="${height}" source="../${source}/${newValue}.png"/>
                     </tile>`;
         }).join('')
