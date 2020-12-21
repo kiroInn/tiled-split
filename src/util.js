@@ -48,6 +48,7 @@ function split(layer, mapMeta) {
 function transform(layer, layerMeta) {
     const matrix = [].concat.apply(['0'], _.map(layer, item => item.matrix))
     const { width, height } = _.get(layer, [0]);
+    layer = layer.filter(item => _.some(item.matrix, item =>  item !== '0'));
     const allMap = _.sortBy(_.union(matrix))
     const isNotEmptyTsx = _.some(_.map(layerMeta, meta => {
         const { min, max } = meta;

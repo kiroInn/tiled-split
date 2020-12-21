@@ -25,7 +25,7 @@ function splitMap(SPLIT) {
         fs.writeFile(`../dist/${namePrefix}/${namePrefix}.mapag`, mapAg(layer, mapMeta), function (err) {
             if (err) return console.log(err);
         })
-        layer = _.filter(layer, item => item.name === 'obj');
+        // filter obj layer = _.filter(layer, item => item.name === 'obj');
         const splitLayers = split(layer, mapMeta);
         _.forEach(_.flatten(_.chunk(splitLayers, SPLIT.chunkCol).reverse()), (item, index) => {
             const fileName = `${namePrefix}/${namePrefix}` + `${index}`.padStart(6, '0')
