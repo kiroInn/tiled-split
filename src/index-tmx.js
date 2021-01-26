@@ -12,6 +12,7 @@ function splitMap(SPLIT) {
             return console.log(err);
         }
         var mapInfo = JSON.parse(convert.xml2json(data, { compact: true, spaces: 2 }));
+        console.log(mapInfo);
         let layer = parseLayer(mapInfo);
         const layerMeta = parseLayerMeta(mapInfo);
         const mapMeta = {
