@@ -21,7 +21,6 @@ function parseLayer(mapInfo) {
             matrix: matrix.split(',').map(item => parseInt(item, 10)),
         }
     })
-    //filter is all 0 layer
     return layers.filter(layer => _.some(layer.matrix, item =>  item !== 0));
 }
 
