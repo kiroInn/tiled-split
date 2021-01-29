@@ -3,7 +3,7 @@ const fs = require('fs');
 const _ = require('lodash');
 const { parseLayerMeta, parseLayer } = require('./parser');
 const { cpSource, mapAg, split, transform } = require('./util');
-
+const { extract } = require('./extract');
 function splitMap(SPLIT) {
     const namePrefix = SPLIT.name.toLowerCase()
     fs.mkdirSync(`../dist/${namePrefix}`, { recursive: true })
@@ -11,8 +11,11 @@ function splitMap(SPLIT) {
         if (err) {
             return console.log(err);
         }
-        var mapInfo = JSON.parse(convert.xml2json(data, { compact: true, spaces: 2 }));
-        console.log(mapInfo);
+        let mapInfo = JSON.parse(convert.xml2json(data, { compact: true, spaces: 2 }));
+        if (SPLIT.isExtract) {
+            mapInfo = extract(mapInfo, SPLIT);
+            // console.log(mapInfo)
+        }
         let layer = parseLayer(mapInfo);
         const layerMeta = parseLayerMeta(mapInfo);
         const mapMeta = {
