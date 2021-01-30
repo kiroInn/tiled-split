@@ -46,6 +46,7 @@ function split(layer, mapMeta) {
 }
 
 function transform(layer, layerMeta) {
+    console.log(layer);
     const matrix = [].concat.apply(['0'], _.map(layer, item => item.matrix))
     const { width, height } = _.get(layer, [0]);
     layer = layer.filter(item => _.some(item.matrix, item =>  item !== '0'));
@@ -54,9 +55,11 @@ function transform(layer, layerMeta) {
         const { min, max } = meta;
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max));
     }), item => !_.isEmpty(item));
-    const tsx = isNotEmptyTsx ? `<tileset firstgid="1" name="saga-mir" columns="0">
+    console.log('isNotEmptyTsx', isNotEmptyTsx);
+    const tsx = isNotEmptyTsx ? `<tileset firstgid="1" name="l4legend" columns="0">
                    ${_.map(layerMeta, meta => {
         const { min, max, source } = meta;
+                    console.log(matrix);
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).map(item => {
             const newValue = item - min;
             if (!_.has(IMAGE_INFO, `[${source}][${newValue}]`)) { console.error('can not find', source, newValue) }
