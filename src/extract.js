@@ -33,11 +33,7 @@ function extract(mapInfo, SPLIT) {
             const indexY = parseInt(height, 10) - index - 1;
             return indexY >= bl.y && indexY <= tr.y
         }).map(item => _.filter(item, (value, index) => index >= bl.x && index <= tr.x))).join(',')
-        // item.data._text = `\n` +
-        //     '0,0,\n' +
-        //     '1955,0\n'
         item.data._text = text;
-        console.log(item)
         return item;
     })
     return mapInfo
