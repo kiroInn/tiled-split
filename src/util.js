@@ -49,25 +49,22 @@ function transform(layer, layerMeta) {
     console.log(layer);
     const matrix = [].concat.apply(['0'], _.map(layer, item => item.matrix))
     const { width, height } = _.get(layer, [0]);
-    layer = layer.filter(item => _.some(item.matrix, item =>  item !== '0'));
+    layer = layer.filter(item => _.some(item.matrix, item => item !== '0'));
     const allMap = _.sortBy(_.union(matrix))
     const isNotEmptyTsx = _.some(_.map(layerMeta, meta => {
         const { min, max } = meta;
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max));
     }), item => !_.isEmpty(item));
-    console.log('isNotEmptyTsx', isNotEmptyTsx);
     const tsx = isNotEmptyTsx ? `<tileset firstgid="1" name="l4legend" columns="0">
-                   ${_.map(layerMeta, meta => {
+                    <tile id="0">
+                        <image width="96" height="64" source="../tiles/1950.png"/>
+                    </tile>${_.map(layerMeta, meta => {
         const { min, max, source } = meta;
-                    console.log(matrix);
         return _.sortBy(_.union(matrix)).filter(item => (item >= min && item < max)).map(item => {
             const newValue = item - min;
             if (!_.has(IMAGE_INFO, `[${source}][${newValue}]`)) { console.error('can not find', source, newValue) }
             const { width = 1, height = 1 } = IMAGE_INFO[source][newValue];
-            return `<tile id="0">
-                        <image width="96" height="64" source="../tiles/1950.png"/>
-                    </tile>
-                    <tile id="${allMap.indexOf(item)}">
+            return `<tile id="${allMap.indexOf(item)}">
                         <image width="${width}" height="${height}" source="../${source}/${newValue}.png"/>
                     </tile>`;
         }).join('')

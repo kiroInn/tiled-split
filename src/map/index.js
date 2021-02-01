@@ -1,44 +1,36 @@
 module.exports = [
-    {
-        name: 'd515',
-        chunkCol: 1,
-        chunkRow: 1,
-        tileWith: 2,
-        tileHeight: 2,
-        isExtract: true,
-        tr: {
-            x: 1,
-            y: 1
-        },
-        bl: {
-            x: 0,
-            y: 0
-        }
-    },
     // {
-    //     name: '0',
-    //     chunkCol: 10,
-    //     chunkRow: 5,
-    //     tileWith: 100,
-    //     tileHeight: 100,
+    //     name: 'd515',
+    //     chunkCol: 1,
+    //     chunkRow: 1,
+    //     tileWith: 2,
+    //     tileHeight: 2,
     //     isExtract: true,
-    //     tl: {
-    //         x: 245,
-    //         y: 130
-    //     },
     //     tr: {
-    //         x: 345,
-    //         y: 130
+    //         x: 1,
+    //         y: 1
     //     },
     //     bl: {
-    //         x: 245,
-    //         y: 30
-    //     },
-    //     br: {
-    //         x: 345,
-    //         y: 30
+    //         x: 0,
+    //         y: 0
     //     }
     // },
+    {
+        name: '0',
+        chunkCol: 1,
+        chunkRow: 1,
+        tileWith: 100,
+        tileHeight: 100,
+        isExtract: true,
+        tr: {
+            x: 345,
+            y: 130
+        },
+        bl: {
+            x: 245,
+            y: 30
+        },
+    },
     // {
     //     name: 'd515',
     //     chunkCol: 4,
