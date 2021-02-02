@@ -46,7 +46,6 @@ function split(layer, mapMeta) {
 }
 
 function transform(layer, layerMeta) {
-    console.log(layer);
     const matrix = [].concat.apply(['0'], _.map(layer, item => item.matrix))
     const { width, height } = _.get(layer, [0]);
     layer = layer.filter(item => _.some(item.matrix, item => item !== '0'));

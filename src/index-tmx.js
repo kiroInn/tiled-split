@@ -6,8 +6,9 @@ const { cpSource, mapAg, split, transform } = require('./util');
 const { extract } = require('./extract');
 function splitMap(SPLIT) {
     const namePrefix = SPLIT.name.toLowerCase()
+    const resPrefix = SPLIT.res.toLowerCase()
     fs.mkdirSync(`../dist/${namePrefix}`, { recursive: true })
-    fs.readFile(`map/${namePrefix}.tmx`, 'utf8', function (err, data) {
+    fs.readFile(`map/${resPrefix}.tmx`, 'utf8', function (err, data) {
         if (err) {
             return console.log(err);
         }
